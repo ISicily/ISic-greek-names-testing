@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Civic accounts</title>
+                <editor ref="#JP">Jonathan Prag</editor>
+                <principal ref="#JP">Jonathan Prag</principal>
+                <funder>John Fell OUP Research Fund</funder>
+                <funder>
+                    <ref target="https://cordis.europa.eu/project/id/885040">ERC Advanced Grant no.885040</ref>
+                </funder>
+                <respStmt>
+                    <name xml:id="JP" ref="http://orcid.org/0000-0003-3819-8537">Jonathan Prag</name>
+                    <resp>original data collection and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <name xml:id="JCu" ref="http://orcid.org/0000-0002-6686-3728">James Cummings</name>
+                    <resp>conversion to EpiDoc</resp>
+                </respStmt>
+                <respStmt>
+                    <name xml:id="SS" ref="https://orcid.org/0000-0003-3914-9569">Simona Stoyanova</name>
+                    <resp>standardisation of template and tidying up encoding</resp>
+                </respStmt>
+                <respStmt>
+                    <name xml:id="MB" ref="https://orcid.org/0000-0003-3673-587X">Maria Barbieri</name>
+                    <resp>EpiDoc editing</resp>
+                </respStmt>
+                <respStmt>
+                    <name xml:id="RC" ref="https://orcid.org/0000-0002-0100-7437">Robert Crellin</name>
+                    <resp>lemmatization and linguistic analysis</resp>
+                </respStmt>
+                <respStmt>
+                    <name xml:id="ZL" ref="https://orcid.org/0009-0007-0586-7956">Zoé Lienard</name>
+                    <resp>named entity annotation</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>I.Sicily</authority>
+                <idno type="filename">ISic001251</idno>
+                <idno type="TM">492857</idno>
+                <idno type="EDR"/>
+                <idno type="EDH"/>
+                <idno type="EDCS">39101619</idno>
+                <idno type="PHI">140739</idno>
+                <idno type="PHI">329616</idno>
+                <idno type="URI">http://sicily.classics.ox.ac.uk/inscription/ISic001251</idno>
+                <idno type="DOI" when="2020-12-22">10.5281/zenodo.4385685</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">Licensed under a Creative Commons-Attribution 4.0 licence.</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country>Italy</country>
+                        <region>Sicily</region>
+                        <settlement>Taormina</settlement>
+                        <repository role="museum" ref="http://sicily.classics.ox.ac.uk/museum/062">Antiquarium del Teatro Antico</repository>
+                        <!--No inventory number found-->
+                        <!--Adding location for old id numbers if available-->
+                        <altIdentifier>
+                            <settlement/>
+                            <repository/>
+                            <idno type="old"/>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <msContents>
+                        <textLang mainLang="grc">Ancient Greek</textLang>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material ana="#material.stone.breccia" ref="http://www.eagle-network.eu/voc/material/lod/73.html">breccia</material>
+                                    <objectType ana="#object.block" ref="http://www.eagle-network.eu/voc/objtyp/lod/189.html">block</objectType>
+                                    <dimensions>
+                                        <height unit="cm">40.5</height>
+                                        <width unit="cm">82</width>
+                                        <depth unit="cm"/>
+                                    </dimensions>
+                                </support>
+                                <condition/>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <rs ana="#execution.chiselled" ref="http://www.eagle-network.eu/voc/writing/lod/1">chiselled</rs>
+                                    <damage/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote><!--Default value and requires editing-->
+                                <locus from="line1" to="line1">Line 1</locus>
+                                <dimensions type="letterHeight">
+                                    <height unit="mm"/>
+                                </dimensions>
+                                <locus from="line1" to="line2">Interlineation line 1 to 2</locus>
+                                <dimensions type="interlinear">
+                                    <height unit="mm"/>
+                                </dimensions>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>
+                                <placeName type="ancient" ref="http://pleiades.stoa.org/places/462506">Tauromenium</placeName>
+                                <placeName type="modern" ref="http://sws.geonames.org/2522975">Taormina</placeName>
+                                <geo>37.85358, 15.28851</geo>
+                            </origPlace>
+                            <origDate datingMethod="#julian" notBefore-custom="-0200" notAfter-custom="-0001">2nd — 1st century BCE</origDate>
+                        </origin>
+                        <provenance type="found" subtype="discovered" when="1864">Found in the area of the ancient theatre c.1864</provenance>
+                        <provenance type="observed" subtype="autopsied" resp="#JP">2009.10.06</provenance>
+                        <acquisition/>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Encoded following the latest EpiDoc guidelines</p>
+            <xi:include href="../alists/ISicily-taxonomies.xml">
+                <xi:fallback>
+                    <p>Taxonomies for ISicily controlled values</p>
+                </xi:fallback>
+            </xi:include>
+            <xi:include href="../alists/charDecl.xml">
+                <xi:fallback>
+                    <p>ISicily glyphs authority list</p>
+                </xi:fallback>
+            </xi:include>
+        </encodingDesc>
+        <profileDesc>
+            <calendarDesc>
+                <calendar xml:id="julian">
+                    <p>Julian Calendar</p>
+                </calendar>
+            </calendarDesc>
+            <langUsage>
+                <language ident="en">English</language>
+                <language ident="it">Italian</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="la">Latin</language>
+                <language ident="he">Hebrew</language>
+                <language ident="phn">Phoenician</language>
+                <language ident="xpu">Punic</language>
+                <language ident="osc">Oscan</language>
+                <language ident="xly">Elymian</language>
+                <language ident="scx">Sikel</language>
+                <language ident="sxc">Sikan</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="http://www.eagle-network.eu/voc/typeins.html">
+                    <term ana="#function.account" ref="http://www.eagle-network.eu/voc/typeins/lod/410.html">accounts</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change when="2016-12-03" who="#JCu">James Cummings autogenerated EpiDoc output from database</change>
+                <change when="2020-10-05" who="#SS">Simona Stoyanova normalised Unicode</change>
+                <change when="2020-10-08" who="#SS">Simona Stoyanova updated list of languages</change>
+                <change when="2020-11-20" who="#SS">Simona Stoyanova added EDCS numbers</change>
+                <change when="2020-11-26" who="#SS">Simona Stoyanova restructured bibliography</change>
+                <change when="2020-12-22" who="#JP">Updated Zenodo DOI</change>
+                <change when="2021-01-19" who="#SS">renumbered files, uris and references</change>
+                <change when="2022-11-20" who="#MB">encoded text</change>
+                <change when="2025-11-03" who="#RC">Robert Crellin added local IDs to edition elements</change>
+                <change when="2025-12-23" who="#ZL">tagged names and persons</change>
+                <change when="2026-01-18" who="#JP">Jonathan Prag cleaned up text encoding and tokenisation</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile><surface/><!-- 
+        <surface type="front">
+            <graphic n="screen" url="ISic001251_tiled.tif" height="3680px" width="5520px">
+                <desc>I.Sicily with the permission of the Assessorato Regionale dei Beni Culturali e dell’Identità Siciliana - Dipartimento dei Beni Culturali e dell’Identità Siciliana</desc>
+            </graphic>
+            <graphic n="print" url="ISic001251.jpg" height="3680px" width="5520px">
+                <desc>I.Sicily with the permission of the Assessorato Regionale dei Beni Culturali e dell’Identità Siciliana - Dipartimento dei Beni Culturali e dell’Identità Siciliana</desc>
+            </graphic>
+        </surface> -->
+    </facsimile>
+    <text>
+        <body>
+            <div type="edition" subtype="primary" xml:space="preserve" xml:lang="grc" resp="#MB">
+                <ab>
+                    <cb n="1"/>
+                    <lb n="1"/><roleName type="civic" subtype="sitophylax"><w><supplied reason="lost">σιτοφυλάκοις</supplied></w></roleName> <w><supplied reason="lost">κυάμων</supplied></w> <w><supplied reason="lost">λοι</supplied>
+                    <lb n="2" break="no"/>πὸν</w> <num value="5"><w>π<supplied reason="lost">έντε</supplied></w></num> <w><supplied reason="lost">ἡμίεκτα</supplied></w>, <num value="1512"><w><supplied reason="lost">δύο</supplied></w> <w><supplied reason="lost">δέκα</supplied></w> <w><supplied reason="lost">πεν</supplied>
+                    <lb n="3" break="no"/>τακ<supplied reason="lost">όσιοι</supplied></w> <w><supplied reason="lost">χίλιοι</supplied></w></num> <w><supplied reason="lost">μέ</supplied>δ<supplied reason="lost">ιμνοι</supplied></w>. <w><supplied reason="lost">σιτω</supplied>
+                    <lb n="4" break="no"/>νίωι</w> <persName type="attested"><name><w>Φρύνιος</w></name></persName> <w>λοιπὸν</w> <num value="40"><w>τεσ<supplied reason="lost">σαράκον</supplied>
+                    <lb n="5" break="no"/>τα</w></num> <w>λίτραι</w>, <num value="13333"><w>τρία</w> <w>τριάκοντα</w> <w><supplied reason="lost">τριακό</supplied>
+                    <lb n="6" break="no"/>σια</w> <w>τρισχίλια</w> <w>μύρια</w></num> <w>τάλαντα</w>. <w><supplied reason="lost">σιτω</supplied>
+                    <lb n="7" break="no"/>νίω<supplied reason="omitted">ι</supplied></w> <persName type="attested"><name><w>Εὐκλείδα</w></name></persName> <w>λοιπὸν</w> <num value="100"><w>ἑκατὸν</w></num> <w><supplied reason="lost">λί</supplied>
+                    <lb n="8" break="no"/>τραι</w>, <num value="21445"><w>πέντε</w> <w>τεσσαράκοντα</w> τ<w>ε<supplied reason="lost">τρα</supplied>
+                    <lb n="9" break="no"/>κόσια</w> <w><supplied reason="lost">χί</supplied>λ<supplied reason="lost">ια</supplied></w> <w><supplied reason="lost">δισ</supplied>μύρια</w></num> <w>τά<supplied reason="lost">λα</supplied>ντα</w>.
+                    <lb n="10"/><w>ἀγορᾶ<supplied reason="lost">ν</supplied></w> <w>δι<supplied reason="lost">ὰ</supplied></w> <w><supplied reason="lost">πω</supplied>λημάτων</w> <num value="15660"><w>ἑ<supplied reason="lost">ξήκον</supplied>
+                    <lb n="11" break="no"/>τα</w> <w>ἑξακόσια</w> <w>πεντακισχ<supplied reason="lost">ίλια</supplied></w> <w><supplied reason="lost">μύρια</supplied></w></num>
+                    <lb n="12"/><w>τάλαντα</w>. <w>ζωπ<unclear>ώ</unclear>λ<supplied reason="lost">ι</supplied>δος</w> <orig>I</orig><gap reason="illegible" quantity="4" unit="character"/>
+                    <lb n="13"/><orig>ΑΑΙΡΑΟ</orig> <num value="12700"><w>ἑπτακόσια</w> <w>δισχί<unclear>λ</unclear><supplied reason="lost">ι</supplied><unclear>α</unclear></w> <w><unclear>μ</unclear><supplied reason="lost">ύρι</supplied>α</w></num> <w>τάλαντα</w> <w part="I">ζμη<unclear>γ</unclear>
+                    <lb n="13" break="no"/><supplied reason="lost">ματ</supplied></w><gap reason="lost" extent="unknown" unit="character"/> <orig>ΕΔ</orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="14"/><num value="15020"><w>εἴκοσι</w> <w>πεντακισχίλια</w> <w><supplied reason="lost">μύρια</supplied></w></num> <w><supplied reason="lost">τά</supplied>
+                    <lb n="15" break="no"/>λαντα</w>. <space extent="unknown" unit="line"/>
+                    <cb n="2"/>
+                    <lb n="0-a"/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><num><w part="F">άκοντα</w></num> <gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost">σιτωνίωι</supplied></w> <persName type="attested"><name><w><supplied reason="lost">Φρύνιος</supplied></w></name></persName> <w>λοιπὸν</w>
+                    <lb n="2"/><num value="40"><w>τεσσερά<supplied reason="lost">κοντα</supplied></w></num> <w><supplied reason="lost">λίτραι</supplied></w> <num value="3333"><w><supplied reason="lost">τρία</supplied></w> <w><supplied reason="lost">τριάκοντα</supplied></w> <w><supplied reason="lost">τριακόσια</supplied></w> <w>τρισχίλια</w></num>
+                    <lb n="3"/><w><supplied reason="lost">μύρια</supplied></w> <w><supplied reason="lost">τάλαντα</supplied></w>
+                    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <num atLeast="100"><w>ἑκατὸν</w></num> <w>λίτ<supplied reason="lost">ραι</supplied></w>
+                    <lb n="0-b"/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="5"/><w>Ἐ<supplied reason="lost">λλ</supplied>ο<supplied reason="lost" cert="low">κίου</supplied></w> <w><supplied reason="lost"><abbr>πρ</abbr></supplied></w> <persName type="attested"><name><w>Θε<supplied reason="lost">ό</supplied>φ<supplied reason="lost">ιλος</supplied></w></name> <persName type="attested"><name type="patronym"><w>Θεοχρήστου</w></name></persName></persName> <gap reason="lost" extent="unknown" unit="character"/> <roleName type="civic.religious" subtype="hieromnamon"><w><supplied reason="lost">ἱερομνα</supplied>
+                    <lb n="6" break="no"/>μόνοις</w></roleName> <w>ἔσοδος</w> <num value="90"><w>ἐνενήκοντα</w></num> <w>λίτραι</w>, <num value="66"><w>ἓξ</w> <w>ἑ<supplied reason="lost">ξ</supplied>ήκοντα</w></num>
+                    <lb n="7"/><w>τάλαντα</w> · <w>ἔξοδος</w> <num value="18"><w>ὀκτ<unclear>ὼ</unclear>δέκα</w></num> <w>λίτραι</w>, <num value="128"><w>ὀ<unclear>κ</unclear><supplied reason="lost">τὼ</supplied></w> <w><supplied reason="lost">ε</supplied>ἴκοσι</w>
+                    <lb n="8"/><w>ἑκατὸν</w></num> <w>τάλαντα</w> · <w>λοιπὸν</w> <num value="57"><w>ἑπτὰ</w> <w>πεντήκοντα</w></num> <w>λίτραι</w>,
+                    <lb n="9"/><num value="193"><w>τρία</w> <w>ἐνενήκοντα</w> <w>ἑκατὸν</w></num> <w>τάλαντα</w>. <roleName type="civic" subtype="tamias"><w>ταμία<supplied reason="lost">ις</supplied></w></roleName> <gap reason="lost" extent="unknown" unit="character"/>
+                    <cb n="3"/>
+                    <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><num atLeast="90"><w><supplied reason="lost">ἐν</supplied>ενή<unclear>κ</unclear><supplied reason="lost">ο</supplied>ν<unclear>τ</unclear>α</w></num>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost">τάλ</supplied>αντα</w> · <w>λο<supplied reason="lost">ιπὸν</supplied></w>
+                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <num value="63"><w>τρία</w> <w>ἑξήκοντα</w></num>
+                    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost">τάλαν</supplied>τα</w>. <roleName type="civic" subtype="sitophylax"><w>σιτοφυλάκοις</w></roleName> <w>κυάμων</w>
+                    <lb n="5"/><w><supplied reason="lost">λοιπ</supplied>ὸν</w> <num value="5"><w>πέντε</w></num> <w>ἡμίεκτα</w>, <num value="1512"><w>δύο</w> <w>δέκα</w> <w>πεντακόσι
+                    <lb n="6" break="no"/><supplied reason="lost">οι</supplied></w> <w><supplied reason="lost">χίλιοι</supplied></w></num> <w><supplied reason="lost">μέδιμ</supplied>νοι</w>. <w>σιτωνίω<supplied reason="omitted">ι</supplied></w> <persName type="attested"><name><w>Φρύνιος</w></name></persName> <w>λοιπὸν</w>
+                    <lb n="7"/><num value="40"><w><supplied reason="lost">τεσσαρ</supplied>άκοντα</w></num> <w>λίτραι</w>, <num value="13333"><w>τρία</w> <w>τρ<supplied reason="lost">ιάκοντα</supplied></w> <w><supplied reason="lost">τριακόσια</supplied></w>
+                    <lb n="8"/><w>τρισ<supplied reason="lost">χίλ</supplied>ια</w> <w>μ<supplied reason="lost">ύρια</supplied></w></num> <w>τάλ<supplied reason="lost">α</supplied>ντα</w>. <w>σιτωνίῳ</w> <persName type="attested"><name><w>Εὐκλ<supplied reason="omitted">ε</supplied>ίδα</w></name></persName>
+                    <lb n="9"/><w>λοιπὸν</w> <num value="100"><w>ἑ<supplied reason="lost">κ</supplied>α<supplied reason="lost">τὸν</supplied></w></num> <w><supplied reason="lost">λί</supplied>τραι</w>, <num value="21445"><w><supplied reason="lost">π</supplied>έντε</w> <w>τεσσαράκοντα</w> <w><supplied reason="lost">τετρ</supplied>α
+                    <lb n="10" break="no"/>κόσ<supplied reason="lost">ι</supplied><unclear>α</unclear></w> <w><supplied reason="lost">χίλια</supplied></w> <w><supplied reason="lost">δισμύρ</supplied>ια</w></num> <w><supplied reason="lost">τ</supplied>άλ<supplied reason="lost">α</supplied>ντα</w>. <w>τούτου</w> <w>ση<supplied reason="lost">σαυρισθὲν</supplied></w>
+                    <lb n="11"/><num value="53"><w><supplied reason="lost">τρεῖς</supplied></w> <w><supplied reason="lost"><unclear>π</unclear>ε</supplied>ντήκον<supplied reason="lost">τα</supplied></w></num> <w><supplied reason="lost">λίτραι</supplied></w> <num value="19464"><w><supplied reason="lost">τέσσαρα</supplied></w> <w><supplied reason="lost">ἑξήκοντα</supplied></w> <w><supplied reason="lost">τετρακόσια</supplied></w>
+                    <lb n="12"/><w><supplied reason="lost">ἐνα</supplied>κισχίλια</w> <w><supplied reason="lost">μύρια</supplied></w></num> <w><supplied reason="lost">τά</supplied>λαντα</w>.
+                    <lb n="13"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">ρίου</w> <w><abbr>πρ</abbr></w> <w part="I">Μι</w><gap reason="illegible" quantity="2" unit="character"/> <orig>ΟΣ</orig> <gap reason="illegible" quantity="1" unit="character"/> <orig>ο</orig> <gap reason="illegible" quantity="2" unit="character"/> <orig>ου</orig> <gap reason="illegible" quantity="1" unit="character"/> <roleName type="civic.religious" subtype="hieromnamon"><w>ἱερομ<supplied reason="lost">ναμ</supplied>όνοις</w></roleName>
+                    <lb n="14"/><w><supplied reason="lost">ἔσοδος</supplied></w> <num><w part="I">τε<supplied reason="lost">σσαρ</supplied></w></num> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="15"/><gap reason="lost" quantity="1" unit="line"/>
+                    <lb n="16"/><gap reason="lost" quantity="1" unit="line"/>
+                    <lb n="17"/><gap reason="lost" extent="unknown" unit="character"/> <roleName type="civic" subtype="tamias"><w><supplied reason="lost">τ</supplied>αμίαις</w></roleName>
+                    <lb n="18"/><gap reason="lost" extent="unknown" unit="character"/><num><w part="F">ήκοντα</w></num>
+                    <lb n="19"/><gap reason="lost" quantity="1" unit="line"/>
+                    <lb n="20"/><gap reason="lost" quantity="1" unit="line"/>
+                    <lb n="21"/><gap reason="lost" quantity="1" unit="line"/>
+                    <lb n="22"/><gap reason="lost" extent="unknown" unit="character"/> <roleName type="civic" subtype="sitophylax"><w><supplied reason="lost">σι</supplied>τοφυλά
+                    <lb n="23" break="no"/><supplied reason="lost">κοις</supplied></w></roleName> <w><supplied reason="lost">κυάμων</supplied></w> <w><supplied reason="lost">λοιπὸν</supplied></w> <num value="5"><w><supplied reason="lost">πέντε</supplied></w></num> <w><supplied reason="lost">ἡμίεκτα</supplied></w>, <num value="1512"><w><supplied reason="lost">δύο</supplied></w> <w><supplied reason="lost">δέκα</supplied></w> <w><supplied reason="lost">π</supplied>εντακό
+                    <lb n="24" break="no"/><supplied reason="lost">σιοι</supplied></w> <w><supplied reason="lost">χίλιοι</supplied></w></num> <w><supplied reason="lost">μέδιμνοι</supplied></w> <w><supplied reason="lost">σιτωνίῳ</supplied></w> <persName type="attested"><name><w><supplied reason="lost">Φρύνιος</supplied></w></name></persName> <w><supplied reason="lost">λοιπὸν</supplied></w><num value="40"><w><supplied reason="lost">τ</supplied>εσσα
+                    <lb n="25" break="no"/><supplied reason="lost">ράκοντα</supplied></w></num> <w><supplied reason="lost">λίτραι</supplied></w>, <num value="13333"><w><supplied reason="lost">τρία</supplied></w> <w><supplied reason="lost">τριάκοντα</supplied></w> <w><supplied reason="lost">τριακόσια</supplied></w> <w><supplied reason="lost">τρισχί</supplied>λια</w>
+                    <lb n="26"/><w><supplied reason="lost">μύρια</supplied></w></num> <w><supplied reason="lost">τάλαντα</supplied></w>. <w><supplied reason="lost">σιτωνίῳ</supplied></w> <persName type="attested"><name><w><supplied reason="lost">Εὐκλείδα</supplied></w></name></persName> <w><supplied reason="lost">λοιπὸ</supplied>ν</w> <num value="100"><w>ἑκατὸν</w></num>
+                    <lb n="27"/><w><supplied reason="lost">λίτραι</supplied></w>, <num value="21445"><w><supplied reason="lost">πέντε</supplied></w> <w><supplied reason="lost">τεσσαράκοντα</supplied></w> <w><supplied reason="lost">τετρακόσια</supplied></w> <w>χίλια</w> <w>δισμύ
+                    <lb n="28" break="no"/><supplied reason="lost">ρια</supplied></w></num> <w><supplied reason="lost">τάλαντα</supplied></w>. <w><supplied reason="lost">τούτου</supplied></w> <w><supplied reason="lost">θησαυρισθὲν</supplied></w> <num value="53"><w><supplied reason="lost">τρεῖς</supplied></w> <w><supplied reason="lost">πεντή</supplied>κοντα</w></num> <w>λίτραι</w>,
+                    <lb n="29"/><num value="19464"><w><supplied reason="lost">τέσσαρα</supplied></w> <w><supplied reason="lost">ἑξήκοντα</supplied></w> <w><supplied reason="lost">τετρακόσια</supplied></w> <w><supplied reason="lost">ἐνακισχί</supplied>λια</w> <w>μύρια</w></num> <w>τάλαντα</w>.
+                    <lb n="30"/><w><supplied reason="lost">Πανάμου</supplied></w> <w><supplied reason="lost"><abbr>πρ</abbr></supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <name type="demotic"><w><abbr><supplied reason="lost">Ἀ</supplied>λκ</abbr></w></name> <roleName type="civic.religious" subtype="hieromnamon"><w>ἱερομνα
+                    <lb n="31" break="no"/><supplied reason="lost">μόνοις</supplied></w></roleName> <gap reason="lost" extent="unknown" unit="character"/><num value="100"><w><supplied reason="lost">ἑ</supplied>κατὸν</w></num> <w>λίτραι</w>,
+                    <lb n="32"/><gap reason="lost" extent="unknown" unit="character"/><num atLeast="4000"><w part="F"><unclear>α</unclear>κ<supplied reason="lost">ισ</supplied>χίλια</w></num> <w>τάλαν
+                    <lb n="33" break="no"/><supplied reason="lost">τα</supplied></w>· <w><supplied reason="lost">ἔξοδ</supplied>ος</w> <num><w part="I">τ</w><gap reason="lost" extent="unknown" unit="character"/><w part="F">οντα</w></num> <w>λίτραι</w>, <num value="6136"><w>ἓξ</w> <w>τριά
+                    <lb n="34" break="no"/>κ<supplied reason="lost">οντα</supplied></w> <w><supplied reason="lost">ἑκ</supplied>ατ<supplied reason="lost">ὸ</supplied><unclear>ν</unclear></w> <w>ἑξα<unclear>κ</unclear><supplied reason="lost">ι</supplied>σχίλια</w></num> <w>τάλαντα</w> · <w>λοιπὸν</w> <num value="87"><w>ἑπτὰ</w>
+                    <lb n="35"/><w>ὀγδοήκοντα</w></num> <w>λίτραι</w>, <num value="706"><w>ἓξ</w> <w>ἑπτακόσια</w></num> <w>τάλαντα</w>. <roleName type="civic" subtype="tamias"><w>ταμί
+                    <lb n="36" break="no"/>αις</w></roleName> <w>ἔσοδος</w> <num value="64"><w>τέσσαρας</w> <w>ἑξήκοντα</w></num> <w>λίτραι</w>, <num value="10252"><w>δύο</w> <w>πε<unclear>ν</unclear><supplied reason="lost">τήκον</supplied>
+                    <lb n="37" break="no"/>τα</w> <w>διακ<supplied reason="lost">όσια</supplied></w> <w>μύρια</w></num> <w>τάλ<supplied reason="lost">α</supplied>ντα</w> · <w><unclear>ἔξο</unclear><supplied reason="lost">δος</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <cb n="4"/>
+                    <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><num atLeast="4000"><w part="F"><supplied reason="lost">α</supplied>κισχίλια</w></num> <w>τ<supplied reason="lost">άλαντα</supplied></w>· <w><supplied reason="lost">λοιπὸν</supplied></w>
+                    <lb n="2"/><num value="64"><w>τέσσαρας</w> <w>ἑξήκοντα</w></num> <w><supplied reason="lost">λίτραι</supplied></w>, <num value="4767"><w><supplied reason="lost">ἑπτὰ</supplied></w> <w><supplied reason="lost">ἑ</supplied>
+                    <lb n="3" break="no"/>ξήκοντα</w> <w>ἑπτακόσια</w> <w>τετρακισχί<supplied reason="lost">λια</supplied></w></num> <w><supplied reason="lost">τάλαν</supplied>
+                    <lb n="4" break="no"/>τα</w>. <roleName type="civic" subtype="sitophylax"><w>σιτοφυλάκοις</w></roleName> <w>κυάμων</w> <w>λοιπὸν</w> <num value="5"><w>πέντε</w></num> <w>ἡμίε
+                    <lb n="5" break="no"/>κτα</w>, <num value="1512"><w>δύο</w> <w>δέκα</w> <w>πεντακόσιοι</w> <w>χίλιοι</w></num> <w>μέδιμνοι</w>. <w>σιτ<unclear>ω</unclear><supplied reason="lost">νί</supplied>
+                    <lb n="6" break="no"/>ω<supplied reason="omitted">ι</supplied></w> <persName type="attested"><name><w>Φρύνιος</w></name></persName> <w>λοιπὸν</w> <num value="40"><w>τεσσαράκοντα</w></num> <w>λίτραι</w>, <num value="13333"><w>τρία</w> <w>τριάκο<supplied reason="lost">ν</supplied>
+                    <lb n="7" break="no"/>τα</w> <w>τριακόσια</w> <w>τρισχίλια</w> <w>μύρια</w></num> <w>τάλαντα</w>. <w>σιτωνίῳ</w> <persName type="attested"><name><w>Εὐ
+                    <lb n="8" break="no"/>κλείδα</w></name></persName> <w>λοιπὸν</w> <num value="100"><w>ἑκατὸν</w></num> <w>λίτραι</w>, <num value="21445"><w>πέντε</w> <w>τεσσαράκοντα</w>
+                    <lb n="9"/><w>τετρακόσια</w> <w>χίλια</w> <w>δισμύρια</w></num> <w>τάλαντα</w> · <w>τούτου</w> <w>θησαυρι<unclear>σ</unclear><supplied reason="lost">θὲν</supplied></w>
+                    <lb n="10"/><num value="53"><w>τρεῖς</w> <w>πεντήκοντα</w></num> <w>λίτραι</w>, <num value="19464"><w>τέσσαρα</w> <w>ἑξήκοντα</w> <w>τετρακό
+                    <lb n="11" break="no"/>σια</w> <w>ἐνακισχίλια</w> <w>μύρια</w></num> <w>τάλαντα</w>.
+                    <lb n="12"/><w>Ἀπ<unclear>ε</unclear><supplied reason="lost">λλ</supplied>αίου</w> <w><abbr>πρ</abbr></w> <persName type="attested"><name><w>Νικόστρατος</w></name> <persName type="attested"><name type="patronym"><w>Νικοστράτου</w></name></persName> <name type="demotic"><w><abbr>Ἰδομ</abbr></w></name></persName> <roleName type="civic.religious" subtype="hieromnamon"><w>ἱερομνα
+                    <lb n="13" break="no"/>μόνοις</w></roleName> <w>ἔσοδος</w> <num value="80"><w>ὀγδοήκοντα</w></num> <w>λίτραι</w>, <num value="599"><w>ἐννέα</w> <w>ἐνενήκον
+                    <lb n="14" break="no"/>τα</w> <w><supplied reason="lost">πε</supplied>ντακόσια</w></num> <w>τάλαντ<unclear>α</unclear></w> · <w>ἔξοδος</w> <num value="68"><w>ὀκτὼ</w> <w>ἑξήκοντα</w></num> <w>λί
+                    <lb n="15" break="no"/>τ<unclear>ρ</unclear>αι</w>, <num value="660"><w><unclear>ἑ</unclear><supplied reason="lost">ξ</supplied>ήκ<supplied reason="lost">ον</supplied><unclear>τ</unclear>α</w> <w>ἑξακόσια</w></num> <w>τάλαντα</w> · <w>λοιπὸν</w> <num value="99"><w>ἐννέα</w>
+                    <lb n="16"/><w>ἐνενήκο<supplied reason="lost">ντ</supplied>α</w></num> <w>λίτραι</w>, <num value="645"><w>πέντε</w> <w>τεσσαράκοντα</w> <w>ἑ<unclear>ξ</unclear>ακόσι
+                    <lb n="17" break="no"/>α</w></num> <w>τά<unclear>λ</unclear><supplied reason="lost">αντ</supplied><unclear>α</unclear></w>. <roleName type="civic" subtype="tamias"><w>ταμίαις</w></roleName> <w>ἔσοδος</w> <num value="1"><w>μία</w></num> <w>λίτρα</w>, <num value="5033"><w>τρία</w> <w>τριάκον
+                    <lb n="18" break="no"/>τα</w> <w>πεντακ<supplied reason="lost">ισ</supplied>χίλια</w></num> <w>τάλαντα</w> · <w>ἔξοδος</w> <num value="99"><w>ἐννέα</w> <w>ἐνενή
+                    <lb n="19" break="no"/>κοντα</w></num> <w>λίτρ<unclear>αι</unclear></w>, <num value="9280"><w>ὀγδοήκοντα</w> <w>διακόσια</w> <w>ἐνακισχίλι
+                    <lb n="20"/>α</w></num> <w>τάλαντα</w> · <w>λοιπὸν</w> <num value="86"><w>ἓξ</w> <w>ὀγδοήκοντα</w></num> <w>λίτραι</w>, <num value="519"><w>ἐνν<supplied reason="lost">έ</supplied>
+                    <lb n="21" break="no"/>α</w> <w>δέκα</w> <w>πεντα<unclear>κ</unclear><supplied reason="lost">όσ</supplied>ια</w></num> <w>τάλαντα</w>.
+                    <lb n="22"/><gap reason="lost" quantity="1" unit="line"/>
+                    <lb n="23"/><gap reason="lost" extent="unknown" unit="character"/> <roleName type="civic" subtype="sitophylax"><w>σιτο<supplied reason="lost">φυλάκοις</supplied></w></roleName> <w><supplied reason="lost">κυάμων</supplied></w> <w><supplied reason="lost">λοιπὸν</supplied></w> <num value="5"><w><supplied reason="lost">πέν</supplied>
+                    <lb n="24" break="no"/>τε</w></num> <w>ἡμίεκτα</w>, <num value="1512"><w>δύο</w> <w>δέκα</w> <w>πε<supplied reason="lost">ντακόσιοι</supplied></w> <w><supplied reason="lost">χίλιοι</supplied></w></num> <w><supplied reason="lost">μέ</supplied>
+                    <lb n="25"/>διμνοι</w>. <w>σιτωνίῳ</w> <persName type="attested"><name><w>Φρύνιος</w></name></persName> <w><supplied reason="lost">λοιπὸν</supplied></w> <num value="40"><w><supplied reason="lost">τεσσαράκον</supplied>
+                    <lb n="26" break="no"/>τα</w></num> <w>λίτραι</w>, <num value="13333"><w>τρία</w> <w>τριάκοντα</w>
+                    <w>τριακόσια</w> <w>τ<supplied reason="lost">ρισχίλια</supplied></w> <w><supplied reason="lost">μύ</supplied>
+                    <lb n="27" break="no"/>ρια</w></num> <w>τάλαντα</w>. <w>σιτωνίῳ</w> <persName type="attested"><name><w>Εὐκλείδα</w></name></persName> <w><supplied reason="lost">λοιπὸν</supplied></w> <num value="100"><w><supplied reason="lost">ἑκα</supplied>
+                    <lb n="28" break="no"/>τὸν</w></num> <w>λίτραι</w>, <num value="21445"><w>πέν<supplied reason="lost">τε</supplied></w> <w>τεσσαράκοντα</w> <w>τ<supplied reason="lost">ετρακόσια</supplied></w> <w><supplied reason="lost">χίλια</supplied></w>
+                    <lb n="29"/><w>δισμύρια</w></num> <w>τάλαντα</w>. <w>τούτου</w> <w><unclear>θ</unclear><supplied reason="lost">ησαυρισθὲν</supplied></w> <num value="53"><w><supplied reason="lost">τρεῖς</supplied></w> <w><supplied reason="lost">πεντή</supplied>
+                    <lb n="30" break="no"/>κοντα</w></num> <w>λίτραι</w>, <num value="19464"><w>τέσσαρα</w> <w>ἑξήκον<supplied reason="lost">τα</supplied></w> <w><supplied reason="lost">τετρακόσια</supplied></w> <w><supplied reason="lost">ἐ</supplied>
+                    <lb n="31" break="no"/>νακισχίλια</w> <w>μύρια</w></num> <w>τάλαντα</w>.
+                    <lb n="31"/><w>Ἰτωνίου</w> <w><abbr>πρ</abbr></w> <persName type="attested"><name><w>Σέαινις</w></name> <persName type="attested"><name type="patronym"><w>Διοδότου</w></name></persName> <name type="demotic"><w><abbr>Ἀ<gap reason="lost" quantity="2" unit="character"/></abbr></w></name></persName> <roleName type="civic.religious" subtype="hieromnamon"><w><supplied reason="lost">ἱερομναμό</supplied>
+                    <lb n="32" break="no"/>νοις</w></roleName> <w>ἔσοδος</w> <num value="20"><w>ἴκοσι</w></num> <w>λίτραι</w>, <num value="354"><w>τέσσαρα</w> <w>πεντ<supplied reason="lost">ήκον</supplied>
+                    <lb n="33" break="no"/>τα</w> <w>τριακόσια</w></num> <w>τάλαντα</w> · <w>ἔξοδος</w> <num value="72"><w>δύο</w> <w>ἑβδομήκον
+                    <lb n="34" break="no"/>τα</w></num> <w>λίτραι</w>, <num value="336"><w>ἓξ</w> <w>τριάκοντα</w> <w>τριακόσια</w></num> <w>τάλαντα</w> · <w>λοι
+                    <lb n="35" break="no"/>πὸν</w> <num value="47"><w>ἑπτὰ</w> <w>τεσσαράκοντα</w></num> <w>λίτραι</w>, <num value="663"><w>τρία</w> <w>ἑξήκον
+                    <lb n="36" break="no"/>τα</w> <w>ἑξακόσια</w></num> <w>τάλαντα</w>. <roleName type="civic" subtype="tamias"><w>ταμί<unclear>α</unclear><supplied reason="lost">ις</supplied></w></roleName> <w><supplied reason="lost">ἔσο</supplied>δ<supplied reason="lost">ος</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="37"/><num value="10"><w>δέκα</w></num> <w>λίτραι</w> <num value="42"><w>δύο</w> <w>τεσσαράκοντ<supplied reason="lost">α</supplied></w></num> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="38"/><gap reason="lost" extent="unknown" unit="character"/><num><w part="F">ια</w></num> <w>τάλαντα</w>· <w>ἔξοδος</w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="39"/><gap reason="lost" extent="unknown" unit="character"/><num atLeast="5400"><w part="F">ακόσια</w> <w>πεν<supplied reason="lost">τακισχίλια</supplied></w></num> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="40"/><gap reason="lost" extent="unknown" unit="character"/><num atLeast="30"><w part="F">κοντα</w></num> <w>λ<supplied reason="lost">ίτραι</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="41"/><gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost">τάλ</supplied>αντα</w>.
+                </ab>
+            </div>
+            <div type="apparatus">
+                <listApp>
+                    <app>
+                        <note>Text of Arangio Ruiz and Olivieri 1925 no.6</note>
+                    </app>
+                </listApp>
+            </div>
+            <div type="translation">
+                <p><!--translation(s) - add @xml:lang for 'en' or 'it' to div--></p>
+            </div>
+            <div type="commentary">
+                <p><!--commentary--></p>
+            </div>
+            <div type="bibliography">
+                <listBibl type="edition">
+                    <bibl type="corpus" n="IG">
+                        <author>Kaibel</author>
+                        <date>1890</date>
+                        <citedRange>
+                            <ref target="https://clio.columbia.edu/catalog/6873760">426</ref>
+                        </citedRange>
+                        <ptr target="https://www.zotero.org/groups/382445/items/Q2SBPG9F"/>
+                        <ref target="https://biblio.inscriptiones.org/epig10001072">https://biblio.inscriptiones.org/epig10001072</ref>
+                    </bibl>
+                    <bibl type="bulletin" n="SEG">
+                        <citedRange>45.1342</citedRange>
+                        <ptr target="http://zotero.org/groups/382445/items/F2GG87EQ"/>
+                        <ref target="https://biblio.inscriptiones.org/epig10000796">https://biblio.inscriptiones.org/epig10000796</ref>
+                    </bibl>
+                    <bibl type="bulletin" n="SEG">
+                        <citedRange>04.0053</citedRange>
+                        <ptr target="http://zotero.org/groups/382445/items/F2GG87EQ"/>
+                        <ref target="https://biblio.inscriptiones.org/epig10000796">https://biblio.inscriptiones.org/epig10000796</ref>
+                    </bibl>
+                    <bibl>
+                        <author>Arangio Ruiz and Olivieri</author>
+                        <date>1925</date>
+                        <citedRange>no.6</citedRange>
+                        <ptr target="https://www.zotero.org/groups/382445/items/5Q2B5T7T"/>
+                        <ref target="https://biblio.inscriptiones.org/epig10001378">https://biblio.inscriptiones.org/epig10001378</ref>
+                    </bibl>
+                    <bibl type="corpus" n="SGDI">
+                        <author>Hoffmann</author>
+                        <date>1904</date>
+                        <citedRange>5224</citedRange>
+                        <ptr target="https://www.zotero.org/groups/382445/items/DQDPC573"/>
+                        <ref target="https://biblio.inscriptiones.org/epig10000817">https://biblio.inscriptiones.org/epig10000817</ref>
+                    </bibl>
+                </listBibl>
+                <listBibl type="discussion">
+                    <bibl/>
+                </listBibl>
+            </div>
+        </body>
+    </text>
+</TEI>

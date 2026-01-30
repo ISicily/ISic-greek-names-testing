@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Prayer for the prosperity of a vineyard</title>
+                <editor ref="#JP">Jonathan Prag</editor>
+                <principal ref="#JP">Jonathan Prag</principal>
+                <funder>John Fell OUP Research Fund</funder>
+	   <funder><ref target="https://cordis.europa.eu/project/id/885040">ERC Advanced Grant no.885040</ref></funder>
+                <respStmt>
+                    <name xml:id="JP" ref="http://orcid.org/0000-0003-3819-8537">Jonathan Prag</name>
+                    <resp>original data collection and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <name xml:id="JCu" ref="http://orcid.org/0000-0002-6686-3728">James Cummings</name>
+                    <resp>conversion to EpiDoc</resp>
+                </respStmt>
+	    <respStmt>
+     	       <name xml:id="SS" ref="https://orcid.org/0000-0003-3914-9569">Simona Stoyanova</name>
+     	       <resp>standardisation of template and tidying up encoding</resp>
+ 	   </respStmt>
+                <respStmt> 
+                    <name xml:id="ZG" ref="https://orcid.org/0009-0008-0871-248X">Zoe Greblunas</name> 
+                    <resp>named entity annotation</resp> 
+                </respStmt> 
+            </titleStmt>
+            <publicationStmt>
+                <authority>I.Sicily</authority>
+                <idno type="filename">ISic002760</idno>
+                <idno type="TM">284749</idno>
+                <idno type="EDR">112490</idno>
+                <idno type="EDH"/>
+                <idno type="EDCS">64600457</idno>
+                <idno type="PHI">316301</idno>
+                <idno type="PHI">329961</idno>
+                <idno type="URI">http://sicily.classics.ox.ac.uk/inscription/ISic002760</idno>
+                <idno type="DOI" when="2020-12-23">10.5281/zenodo.4387357</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">Licensed under a Creative Commons-Attribution 4.0 licence.</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country>Italy</country>
+                        <region>Sicily</region>
+                        <settlement>Catania</settlement>
+                        <repository role="museum" ref="http://sicily.classics.ox.ac.uk/museum/018">Museo Civico di Catania</repository>
+                        <idno type="inventory">319</idno>
+                        <!--Adding location for old id numbers if available-->
+                        <altIdentifier>
+                            <settlement/>
+                            <repository/>
+                            <idno type="old"/>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <msContents>
+                        <textLang mainLang="grc">Ancient Greek</textLang>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support><p>Five fragments, reconnected, of a plaque of limestone, with elements missing from the lower left, and on the right margin, and the surface now heavily worn on the surviving left portion.</p>
+                                    <material ana="#material.stone.limestone" ref="http://www.eagle-network.eu/voc/material/lod/66.html">limestone</material>
+                                    <objectType ana="#object.plaque" ref="https://www.eagle-network.eu/voc/objtyp/lod/259.html">plaque</objectType>
+                                    <dimensions><!--Korhonen-->
+                                        <height unit="cm">43.5</height>
+                                        <width unit="cm">60</width>
+                                        <depth unit="cm">5.5</depth>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#condition.fragments.contiguous"/>
+		    </supportDesc>
+                            <layoutDesc>
+                                <layout><p>6 lines of text on the upper portion of the plaque, with a series of magical symbols on two lines below the text.</p>
+                                    <rs ana="#execution.chiselled" ref="http://www.eagle-network.eu/voc/writing/lod/1">chiselled</rs>
+                                	<damage ana="#text_condition.incomplete"/>
+			</layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote><!--Korhonen-->
+                                <locus from="line1" to="line6">Line 1-6</locus>
+                                <dimensions type="letterHeight">
+                                    <height unit="mm" atLeast="15" atMost="18">15-18</height>
+                                </dimensions>
+                                <locus from="line1" to="line2">Interlineation line 1 to 2</locus>
+                                <dimensions type="interlinear">
+                                    <height unit="mm"/>
+                                </dimensions>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>
+                                <placeName type="ancient" ref="http://pleiades.stoa.org/places/462185">Dianae Fons</placeName>
+                                <placeName type="modern" ref="http://sws.geonames.org/2524955">Comiso</placeName>
+                                <geo>36.94893, 14.60731</geo>
+                            </origPlace>
+                            <origDate datingMethod="#julian" notBefore-custom="0351" notAfter-custom="0550">later 4th - earlier 6th century CE</origDate>
+                        </origin>
+                        <provenance type="found" subtype="discovered" notAfter="1757">First recorded by Amico 1757; currently in storage in the Museo Civico, but in a poorer condition than when first found.</provenance>
+                        <provenance type="observed" subtype="autopsied">None</provenance>
+                        <acquisition/>
+                    </history>
+                    </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+             <p>Encoded following the latest EpiDoc guidelines</p>
+             <xi:include href="../alists/ISicily-taxonomies.xml">
+                 <xi:fallback>
+                     <p>Taxonomies for ISicily controlled values</p>
+                 </xi:fallback>
+             </xi:include>
+	  <xi:include href="../alists/charDecl.xml">
+	     <xi:fallback>
+	       <p>ISicily glyphs authority list</p>
+	     </xi:fallback>
+	   </xi:include>
+         </encodingDesc>
+        <profileDesc>
+            <calendarDesc>
+                <calendar xml:id="julian">
+                    <p>Julian Calendar</p>
+                </calendar>
+            </calendarDesc>
+            <langUsage>
+                <language ident="en">English</language>
+                <language ident="it">Italian</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="la">Latin</language>
+                <language ident="he">Hebrew</language>
+                <language ident="phn">Phoenician</language>
+                <language ident="xpu">Punic</language>
+                <language ident="osc">Oscan</language>
+                <language ident="xly">Elymian</language>
+                <language ident="scx">Sikel</language>
+                <language ident="sxc">Sikan</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="http://www.eagle-network.eu/voc/typeins.html">
+                    <term ana="#function.prayer" ref="http://www.eagle-network.eu/voc/typeins/lod/85.html">prayer</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change when="2016-12-03" who="#JCu">James Cummings autogenerated EpiDoc output from database</change>
+            	   <change when="2020-10-05" who="#SS">Simona Stoyanova normalised Unicode</change>
+            	   <change when="2020-10-08" who="#SS">Simona Stoyanova updated list of languages</change>
+            	<change when="2020-11-20" who="#SS">Simona Stoyanova added EDCS numbers</change>
+		<change when="2020-11-26" who="#SS">Simona Stoyanova restructured bibliography</change>
+	    <change when="2020-12-23" who="#JP">Updated Zenodo DOI</change>
+            	<change when="2021-01-19" who="#SS">renumbered files, uris and references</change>
+                <change when="2025-07-04" who="#JP">Jonathan Prag revised from publication and added images</change>
+                <change when="2025-12-18" who="#ZG">Zoe Greblunas tagged names and persons</change> 
+	</listChange>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile> 
+        <surface type="front">
+            <graphic n="screen" url="ISic002760_tiled.tif" height="3024px" width="4032px">
+                <desc>I.Sicily with the permission of the Assessorato Regionale dei Beni Culturali e dell’Identità Siciliana - Dipartimento dei Beni Culturali e dell’Identità Siciliana; photo Liceo Lazzaro, 2017-11-17</desc>
+            </graphic>
+            <graphic n="print" url="ISic002760.jpg" height="3024px" width="4032px">
+                <desc>I.Sicily with the permission of the Assessorato Regionale dei Beni Culturali e dell’Identità Siciliana - Dipartimento dei Beni Culturali e dell’Identità Siciliana; photo Liceo Lazzaro, 2017-11-17</desc>
+            </graphic>
+            <graphic n="screen" url="ISic002760_detail_left_tiled.tif" height="3456px" width="4608px">
+                <desc>I.Sicily with the permission of the Assessorato Regionale dei Beni Culturali e dell’Identità Siciliana - Dipartimento dei Beni Culturali e dell’Identità Siciliana; photo Liceo Lazzaro, 2017-11-17</desc>
+            </graphic>
+            <graphic n="print" url="ISic002760_detail_left.jpg" height="3456px" width="4608px">
+                <desc>I.Sicily with the permission of the Assessorato Regionale dei Beni Culturali e dell’Identità Siciliana - Dipartimento dei Beni Culturali e dell’Identità Siciliana; photo Liceo Lazzaro, 2017-11-17</desc>
+            </graphic>
+            <graphic n="screen" url="ISic002760_detail_right_tiled.tif" height="3456px" width="4608px">
+                <desc>I.Sicily with the permission of the Assessorato Regionale dei Beni Culturali e dell’Identità Siciliana - Dipartimento dei Beni Culturali e dell’Identità Siciliana; photo Liceo Lazzaro, 2017-11-17</desc>
+            </graphic>
+            <graphic n="print" url="ISic002760_detail_right.jpg" height="3456px" width="4608px">
+                <desc>I.Sicily with the permission of the Assessorato Regionale dei Beni Culturali e dell’Identità Siciliana - Dipartimento dei Beni Culturali e dell’Identità Siciliana; photo Liceo Lazzaro, 2017-11-17</desc>
+            </graphic>
+         </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="edition" subtype="primary" xml:space="preserve" xml:lang="grc" resp="#JP" source="https://www.zotero.org/groups/382445/items/2EUC82DH">
+                <ab>
+                    <lb n="1"/><supplied reason="lost">Ἐν</supplied> <supplied reason="undefined" evidence="previouseditor">ὀ</supplied>νό<supplied reason="undefined" evidence="previouseditor">ματι</supplied> <persName type="divine"><name><expan><abbr><supplied reason="undefined" evidence="previouseditor">Κυ</supplied></abbr><ex>ρίου</ex></expan></name></persName> <supplied reason="undefined" evidence="previouseditor">πρὸς</supplied> <supplied reason="undefined" evidence="previouseditor">ἀ</supplied>μπελν<supplied reason="lost">αν</supplied> <orig>ΟΤΡΙΑΑΡΕ</orig> <persName type="divine"><name>Ἀβιμ<supplied reason="undefined" evidence="previouseditor">ήλ</supplied></name></persName> <persName type="divine"><name><supplied reason="undefined" evidence="previouseditor">Λασ</supplied>φ<supplied reason="undefined" evidence="previouseditor">έν</supplied></name></persName> <persName type="divine"><name><supplied reason="undefined" evidence="previouseditor">Ἀμιήλ</supplied></name></persName> <persName type="divine"><name><supplied reason="undefined" evidence="previouseditor">Ἐλοέλ</supplied></name></persName> <persName type="divine"><name><supplied reason="undefined" evidence="previouseditor">Ἐ
+                    <lb n="2" break="no"/>άο</supplied></name></persName> <persName type="divine"><name><supplied reason="undefined" evidence="previouseditor">Ἀζαήρ</supplied></name></persName> <persName type="divine"><name><supplied reason="undefined" evidence="previouseditor">Κορφλι<hi rend="ligature">ήλ</hi></supplied></name></persName> <persName type="divine"><name>Φαχθοβάρ</name></persName> <gap reason="lost" quantity="2" unit="character"/><orig>ΑΧ</orig> <persName type="divine"><name>Ἀδο<hi rend="ligature">ναή</hi>λ</name></persName> <orig>Ε<unclear>Ο</unclear><supplied reason="undefined" evidence="previouseditor">ΕΧΕΡΜΑΡΘ</supplied></orig> <persName type="divine"><name><supplied reason="undefined" evidence="previouseditor">Ἀβράξ</supplied></name></persName> <supplied reason="undefined" evidence="previouseditor"><orig>ΙΑΦΕΝ</orig></supplied>
+                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <orig><supplied reason="undefined" evidence="previouseditor">ΑΧΑΕΛΜΕΡΜΟΡ</supplied>Μ<supplied reason="undefined" evidence="previouseditor">Ο</supplied>ΡΚΑΘΑΛΟΚ</orig> <supplied reason="undefined" evidence="previouseditor"><orig>ΘΑ</orig></supplied> <gap reason="lost" quantity="3" unit="character"/> <orig>ΟΔ</orig> <supplied reason="undefined" evidence="previouseditor"><orig>ΑΜΕΛΜΟΥΚΗΠΡΟΣΑΗΝΟΣ</orig></supplied>
+                    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="divine"><name><supplied reason="undefined" evidence="previouseditor">Ἐραήλ</supplied></name></persName> <supplied reason="undefined" evidence="previouseditor">ἀμήν</supplied> <orig>Β</orig> <persName type="divine"><name>Ἐραὴλ</name></persName> <orig>ΘΥΛΑΤ<unclear>ΑΑΣ</unclear>Ε</orig> <gap reason="lost" quantity="2" unit="character"/> <supplied reason="undefined" evidence="previouseditor"><orig>ΤΗΤΟΦ</orig></supplied> <persName type="divine"><name><expan><abbr><supplied reason="undefined" evidence="previouseditor">Ἰ</supplied></abbr><ex>ησο</ex><abbr><supplied reason="undefined" evidence="previouseditor">ῦ</supplied></abbr></expan></name> <name><expan><abbr><supplied reason="undefined" evidence="previouseditor">Χρ</supplied></abbr><ex>ιστ</ex><abbr><supplied reason="undefined" evidence="previouseditor">έ</supplied></abbr></expan></name></persName> <supplied reason="undefined" evidence="previouseditor">ὁ</supplied> <supplied reason="undefined" evidence="previouseditor">πλοι</supplied>
+                    <lb n="5" break="no"/><supplied reason="lost">θύνας</supplied> <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">ἰς</supplied> <supplied reason="undefined" evidence="previouseditor">τὶν</supplied> <supplied reason="undefined" evidence="previouseditor">θαλάσση</supplied><supplied reason="lost">ν</supplied> πλοίθυνον καὶ <supplied reason="undefined" evidence="previouseditor">τὸν</supplied> ἄ<supplied reason="undefined" evidence="previouseditor">μπ</supplied><supplied reason="lost">ελον</supplied> <supplied reason="undefined" evidence="previouseditor">ἰς</supplied> <supplied reason="undefined" evidence="previouseditor">τ</supplied><supplied reason="lost">ὸν</supplied> <supplied reason="lost">ἀμπε</supplied><supplied reason="undefined" evidence="previouseditor">λν</supplied><supplied reason="lost">α</supplied><supplied reason="undefined" evidence="previouseditor">ν</supplied>
+                    <lb n="6"/><space unit="character" extent="unknown"/> <supplied reason="undefined" evidence="previouseditor"><orig>ΟΛΜΕΤΡ</orig></supplied>
+                    <lb n="7"/><g ref="#sign_uninterpreted"/> <g ref="#sign_uninterpreted"/> <g ref="#sign_uninterpreted"/> <g ref="#sign_uninterpreted"/> <g ref="#sign_uninterpreted"/> <g ref="#sign_uninterpreted"/> <g ref="#sign_uninterpreted"/> <g ref="#sign_uninterpreted"/> <g ref="#sign_uninterpreted"/> <g ref="#sign_uninterpreted"/> <g ref="#sign_uninterpreted"/>  
+                    <lb n="8"/><g ref="#sign_uninterpreted"/> <g ref="#sign_uninterpreted"/> <g ref="#sign_uninterpreted"/> <g ref="#sign_uninterpreted"/> <g ref="#staurogram">&#x101a0;</g> <g ref="#staurogram">&#x101a0;</g> <g ref="#staurogram">&#x101a0;</g> <g ref="#staurogram">&#x101a0;</g> <g ref="#staurogram">&#x101a0;</g> <g ref="#staurogram">&#x101a0;</g> <g ref="#staurogram">&#x101a0;</g> <g ref="#staurogram">&#x101a0;</g>
+                </ab>
+              </div>
+            <div type="apparatus">
+                <listApp><app><note>Text of Korhonen IMusCatania after Burzachechi</note></app></listApp>
+            </div>
+            <div type="translation">
+                <p><!--translation(s) - add @xml:lang for 'en' or 'it' to div--></p>
+            </div>
+            <div type="commentary">
+                <p><!--commented out pending revision-->
+                    <!--now very damaged and more or less illegible; Burzachechi's reading based upon 18thC drawing. One of several such prayers from the area, cf. SEG 18.408, 415.--></p>
+            </div>
+            <div type="bibliography">
+                <listBibl type="edition">
+                    <bibl type="bulletin" n="SEG">
+                        <citedRange>18.0414</citedRange>
+                        <ptr target="http://zotero.org/groups/382445/items/F2GG87EQ"/>
+                    <ref target="https://biblio.inscriptiones.org/epig10000796">https://biblio.inscriptiones.org/epig10000796</ref></bibl>
+                    <bibl type="bulletin" n="BE">
+                        <citedRange>1961.0865</citedRange>
+                        <ptr target="http://zotero.org/groups/382445/items/77P5MNIR"/>
+                    <ref target="https://biblio.inscriptiones.org/epig10001282">https://biblio.inscriptiones.org/epig10001282</ref></bibl>
+                    <bibl type="bulletin" n="BE">
+                        <citedRange>1954.0019</citedRange>
+                        <ptr target="http://zotero.org/groups/382445/items/77P5MNIR"/>
+                    <ref target="https://biblio.inscriptiones.org/epig10001282">https://biblio.inscriptiones.org/epig10001282</ref></bibl>
+                    <bibl type="corpus" n="IMusCatania">
+                         <author>Korhonen</author>
+                         <date>2004</date> 
+                        <citedRange>235</citedRange>
+                        <ptr target="https://www.zotero.org/groups/382445/items/2EUC82DH"/>
+                    <ref target="https://biblio.inscriptiones.org/epig10000028">https://biblio.inscriptiones.org/epig10000028</ref></bibl>
+                    <bibl>
+                        <author>Burzachechi</author>
+                        <date>1959</date>
+                        <citedRange>405-407 no.2 ph</citedRange>
+                        <ptr target="https://www.zotero.org/groups/382445/items/WNUUWEMJ"/>
+                    <ref target="https://biblio.inscriptiones.org/epig10002108">https://biblio.inscriptiones.org/epig10002108</ref></bibl>
+                    <bibl>
+                        <author>Pace</author>
+                        <date>1949</date>
+                        <citedRange>38-39</citedRange>
+                        <ptr target="https://www.zotero.org/groups/382445/items/ZEDFITDZ"/>
+                    <ref target="https://biblio.inscriptiones.org/epig10001690">https://biblio.inscriptiones.org/epig10001690</ref></bibl>
+                    <bibl>
+                        <author>Mercurelli</author>
+                        <date>1945</date>
+                        <citedRange>92</citedRange>
+                        <ptr target="https://www.zotero.org/groups/382445/items/TGHB2QXC"/>
+                    <ref target="https://biblio.inscriptiones.org/epig10001751">https://biblio.inscriptiones.org/epig10001751</ref></bibl>
+                    <bibl>
+                        <author>Pugliese Carratelli</author>
+                        <date>1953</date>
+                        <citedRange>181</citedRange>
+                        <ptr target="https://www.zotero.org/groups/382445/items/FF745AII"/>
+                    <ref target="https://biblio.inscriptiones.org/epig10001651">https://biblio.inscriptiones.org/epig10001651</ref></bibl>
+                    <bibl>
+                        <author>Jordan</author>
+                        <date>1984</date>
+                        <ptr target="https://www.zotero.org/groups/382445/items/G9VZB9TQ"/>
+                    <ref target="https://biblio.inscriptiones.org/epig10001903">https://biblio.inscriptiones.org/epig10001903</ref></bibl>
+                    <bibl>
+                        <author>Manganaro</author>
+                        <date>1963</date>
+                        <ptr target="https://www.zotero.org/groups/382445/items/VWZNTPEG"/>
+                    <ref target="https://biblio.inscriptiones.org/epig10001849">https://biblio.inscriptiones.org/epig10001849</ref></bibl>
+                    <bibl>
+                        <author>Libertini</author>
+                        <date>1930</date>
+                        <citedRange>318 no.11</citedRange>
+                        <ptr target="https://www.zotero.org/groups/382445/items/SKUU2R8X"/>
+                    <ref target="https://biblio.inscriptiones.org/epig10001871">https://biblio.inscriptiones.org/epig10001871</ref></bibl>
+                </listBibl>
+	   <listBibl type="discussion"><bibl/></listBibl>
+            </div>
+        </body>
+    </text>
+</TEI>

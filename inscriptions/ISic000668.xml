@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en">
     <teiHeader>
         <fileDesc>
@@ -38,7 +36,7 @@
                 <idno type="filename">ISic000668</idno>
                 <idno type="TM">644894</idno>
                 <idno type="EDR">148174  </idno>
-                <idno type="EDH"/>
+                <idno type="EDH" />
                 <idno type="EDCS">70900396</idno>
                 <idno type="PHI">332336</idno>
                 <idno type="PHI">337197</idno>
@@ -55,12 +53,12 @@
                         <region>Sicily</region>
                         <settlement>Catania</settlement>
                         <repository role="museum" ref="http://sicily.classics.ox.ac.uk/museum/2">Museo Archeologico Regionale di Centuripe</repository>
-                        <!--No inventory number found-->
-                        <!--Adding location for old id numbers if available-->
+                        
+                        
                         <altIdentifier>
-                            <settlement/>
-                            <repository/>
-                            <idno type="old"/>
+                            <settlement />
+                            <repository />
+                            <idno type="old" />
                         </altIdentifier>
                     </msIdentifier>
                     <msContents>
@@ -79,13 +77,13 @@
                                         <depth unit="cm">7.3-10.1 (left to right)</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#condition.fragment"/>
+                                <condition ana="#condition.fragment" />
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
                                     <p>The text fills the face of the stone, with a margin of 10mm on the left edge, and a margin along the top of 22mm. The first two lines are larger than the rest.</p>
                                     <rs ana="#execution.chiselled" ref="http://www.eagle-network.eu/voc/writing/lod/1">chiselled</rs>
-                                    <damage ana="#text_condition.incomplete"/>
+                                    <damage ana="#text_condition.incomplete" />
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -164,9 +162,9 @@
                             </origPlace>
                             <origDate datingMethod="#julian" notBefore-custom="-0200" notAfter-custom="-0051" evidence="lettering">Second or earlier first century BCE, primarily on palaeographic grounds (Manganaro various proposed dates between the end of 2nd century BCE and end of 1st century BCE (Manganaro 1963 and Cebeillac Gervasoni suggest post 36 BCE, assuming that line 17 implies the status of Centuripe as Latin municipium, which seems doubtful); Dubois, IGDS, suggests early 2nd century).</origDate>
                         </origin>
-                        <provenance type="found" subtype="discovered" when="1962">Said originally to be found at the locality of Acquamara, but seems likely to have come from the area thought to be that of the anicent agora / forum, slightly north of the location of the so-called Augustalia. The piece was found by a private individual in 1962, and passed into private hands. It is now in the custody of the Soprintendenza per i Beni Culturali e Ambientali di Catania, and temporarily on display at the Centuripe museum (September 2024).<geo>37.62281,14.7405836</geo></provenance><!-- representative point north of the Augustalia -->
+                        <provenance type="found" subtype="discovered" when="1962">Said originally to be found at the locality of Acquamara, but seems likely to have come from the area thought to be that of the anicent agora / forum, slightly north of the location of the so-called Augustalia. The piece was found by a private individual in 1962, and passed into private hands. It is now in the custody of the Soprintendenza per i Beni Culturali e Ambientali di Catania, and temporarily on display at the Centuripe museum (September 2024).<geo>37.62281,14.7405836</geo></provenance>
                         <provenance type="observed" subtype="autopsied">Prag 2024-09-27 in the Museo Archeologico Regionale di Centuripe</provenance>
-                        <acquisition/>
+                        <acquisition />
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -279,81 +277,28 @@
         <body>
             <div type="edition" subtype="primary" xml:space="preserve" xml:lang="grc" resp="#JP">
                 <ab>
-                    <lb n="1" xml:id="AΟεAK"/><w xml:id="AΟεAU" n="5"><supplied reason="lost" xml:id="AΟεAe">οἱ πρέσ</supplied><unclear xml:id="AΟεAo">β</unclear>εις</w> <w xml:id="AΟεAy" n="10">οἱ</w> <w xml:id="AΟεAΙ" n="15">πορευθέντες</w> <w xml:id="AΟεAΤ" n="20">ἐς</w> <placeName><w xml:id="AΟεAε" n="25">Ῥώμαν</w></placeName> <w xml:id="AΟεAο" n="30">κα<supplied reason="lost" xml:id="AΟεBA">ὶ</supplied></w> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεBK" n="35"/>
-                    <lb n="2" xml:id="AΟεBU"/><w xml:id="AΟεBe" n="40"><supplied reason="lost" xml:id="AΟεBo">ἐπι</supplied>στελματα</w> <w xml:id="AΟεBy" n="45">εἶχον</w> <persName type="attested"><name><w xml:id="AΟεBΙ" n="50">Φιλί<unclear xml:id="AΟεBΤ">α</unclear>ρχος</w></name> <persName type="attested"><name type="patronym"><w xml:id="AΟεBε" n="55">Φιλιάρχου,</w></name></persName></persName> <persName type="attested"><name><w part="I" xml:id="AΟεBο" n="60">Λαμπ</w></name></persName> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεCA" n="65"/>
-                    <lb n="3" xml:id="AΟεCK"/><gap reason="lost" unit="character" atLeast="4" atMost="5" xml:id="AΟεCU" n="70"/><w xml:id="AΟεCe" n="75">αὐτούστα</w> <w xml:id="AΟεCo" n="80">ἐς</w> <placeName><w xml:id="AΟεCy" n="85">Λανόϊον</w></placeName> <w xml:id="AΟεCΙ" n="90">πεπορεῦσθαι</w> <w xml:id="AΟεCΤ" n="95">καὶ</w> <w xml:id="AΟεCε" n="100">ἀνανενειώσ<supplied reason="lost" xml:id="AΟεCο">ασθαι</supplied></w> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεDA" n="105"/>
-                    <lb n="4" xml:id="AΟεDK"/><w xml:id="AΟεDU" n="110"><supplied reason="lost" xml:id="AΟεDe">τ</supplied>ῶν</w> <placeName type="ethnic"><w xml:id="AΟεDo" n="115">Λανοινῶν</w></placeName> <w xml:id="AΟεDy" n="120">ποτὶ</w> <w xml:id="AΟεDΙ" n="125">τὸν</w> <w xml:id="AΟεDΤ" n="130">δᾶμον</w> <w xml:id="AΟεDε" n="135">τῶν</w> <placeName type="ethnic"><w xml:id="AΟεDο" n="140">Κεντοριπίνων</w></placeName> <w xml:id="AΟεEA" n="145">συγγένει<supplied reason="lost" xml:id="AΟεEK">αν</supplied></w> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεEU" n="150"/>
-                    <lb n="5" xml:id="AΟεEe"/><gap reason="lost" unit="character" quantity="1" xml:id="AΟεEo" n="155"/><w part="F" xml:id="AΟεEy" n="160">ἥκειν</w> <w xml:id="AΟεEΙ" n="165">αὐτούστα</w> <w xml:id="AΟεEΤ" n="170">δόγμα</w> <w xml:id="AΟεEε" n="175">παρὰ</w> <w xml:id="AΟεEο" n="180">τᾶς</w> <w xml:id="AΟεFA" n="185">συγκλήτου</w> <w xml:id="AΟεFK" n="190">τῶν</w> <placeName type="ethnic"><w xml:id="AΟεFU" n="195">Λανοινῶ<unclear xml:id="AΟεFe">ν</unclear></w></placeName> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεFo" n="200"/>
-                    <lb n="6" xml:id="AΟεFy"/><persName type="attested"><name type="nomen"><w xml:id="AΟεFΙ" n="205">Φούριος</w></name> <persName type="attested"><name type="patronym"><w xml:id="AΟεFΤ" n="210">Ποπλίου</w></name></persName> <w xml:id="AΟεFε" n="215">υἱὸς</w></persName> <roleName type="civic" subtype="dictator" xml:id="AΟεFο"><w xml:id="AΟεGA" n="220">στραταγὸς</w> <w xml:id="AΟεGK" n="225">αὐτοκράτωρ</w></roleName> <w xml:id="AΟεGU" n="230">καὶ</w> <persName type="attested"><name type="praenomen"><w xml:id="AΟεGe" n="235">Γάϊος</w></name> <name type="nomen"><w xml:id="AΟεGo" n="240">Ἀτέλ<unclear xml:id="AΟεGy">λ</unclear><supplied reason="lost" xml:id="AΟεGΙ">ιος</supplied></w></name> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεGΤ" n="245"><desc xml:id="AΟεGε">patronym</desc></gap><w xml:id="AΟεGο" n="250"><supplied reason="lost" xml:id="AΟεHA">υἱός</supplied></w></persName> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεHK" n="255"/>
-                    <lb n="7" xml:id="AΟεHU"/><persName type="attested"><persName type="attested"><name type="patronym"><w xml:id="AΟεHe" n="260">Γαΐου</w></name></persName> <w xml:id="AΟεHo" n="265">υἱὸς</w></persName> <roleName type="civic" subtype="agoranomos" xml:id="AΟεHy"><w xml:id="AΟεHΙ" n="270">ἀγορανόμοι</w></roleName> <w xml:id="AΟεHΤ" n="275">τᾶι</w> <w xml:id="AΟεHε" n="280">συγκλήτωι</w> <w xml:id="AΟεHο" n="285">συνεβουλεύσαντο</w> <w part="I" xml:id="AΟεIA" n="290">ἀ<unclear xml:id="AΟεIK">ν</unclear></w> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεIU" n="295"/>
-                    <lb n="8" xml:id="AΟεIe"/><w xml:id="AΟεIo" n="300">καλανδᾶν</w> <w xml:id="AΟεIy" n="305">Δεκεμβρίων</w> <w xml:id="AΟεIΙ" n="310">γραφομένωι</w> <w xml:id="AΟεIΤ" n="315">παρεγένοντο</w> <persName type="attested"><name type="praenomen"><w xml:id="AΟεIε" n="320">Λεύ<supplied reason="lost" xml:id="AΟεIο">κιος</supplied></w></name> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεJA" n="325"><desc xml:id="AΟεJK">nomen, patronym</desc></gap><w xml:id="AΟεJU" n="330"><supplied reason="lost" xml:id="AΟεJe">υἱὸς</supplied></w></persName> <persName type="attested"><gap reason="lost" extent="unknown" unit="character" xml:id="AΟεJo" n="335"><desc xml:id="AΟεJy">praenomen</desc></gap>
-                    <lb n="9" xml:id="AΟεJΙ"/><name type="nomen"><w xml:id="AΟεJΤ" n="340">Μαάρκιος</w></name> <persName type="attested"><name type="patronym"><w xml:id="AΟεJε" n="345">Κοίντου</w></name></persName> <w xml:id="AΟεJο" n="350">υἱός</w></persName> <persName type="attested"><name type="praenomen"><w xml:id="AΟεKA" n="355">Λεύκιος</w></name> <name type="nomen"><w xml:id="AΟεKK" n="360">Κάπτιος</w></name> <persName type="attested"><name type="patronym"><w xml:id="AΟεKU" n="365">Μαάρκου</w></name></persName> <w xml:id="AΟεKe" n="370">υἱὸς</w></persName> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεKo" n="375"/>
-                    <lb n="10" xml:id="AΟεKy"/><persName type="attested"><name><w xml:id="AΟεKΙ" n="380">Ξώαρχος</w></name> <persName type="attested"><name type="patronym"><w xml:id="AΟεKΤ" n="385">Μενίσκου</w></name></persName> <w xml:id="AΟεKε" n="390">υἱὸς</w></persName> <roleName type="civic" subtype="presbys" xml:id="AΟεKο"><w xml:id="AΟεLA" n="395">πρέσβεις</w></roleName> <placeName type="ethnic"><w xml:id="AΟεLK" n="400">Κεντοριπίνων</w></placeName> <w part="I" xml:id="AΟεLU" n="405">λ<unclear xml:id="AΟεLe">ω</unclear></w> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεLo" n="410"/>
-                    <lb n="11" xml:id="AΟεLy"/><w xml:id="AΟεLΙ" n="415"><supplied reason="lost" xml:id="AΟεLΤ">το</supplied>ῦ</w> <w xml:id="AΟεLε" n="420">δάμου</w> <w xml:id="AΟεLο" n="425">καὶ</w> <w xml:id="AΟεMA" n="430">τᾶς</w> <w xml:id="AΟεMK" n="435">συγκλήτου</w> <w xml:id="AΟεMU" n="440">τῶν</w> <placeName type="ethnic"><w xml:id="AΟεMe" n="445">Κεντοριπίνων</w></placeName> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεMo" n="450"/>
-                    <lb n="12" xml:id="AΟεMy"/><w xml:id="AΟεMΙ" n="455"><supplied reason="lost" xml:id="AΟεMΤ">προ</supplied>ξενίαν</w> <w xml:id="AΟεMε" n="460">καὶ</w> <w xml:id="AΟεMο" n="465">οἰκειοσύναν</w> <w xml:id="AΟεNA" n="470">ἀνανειωσούμενοι</w> <w xml:id="AΟεNK" n="475">κα<unclear xml:id="AΟεNU">ὶ</unclear></w> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεNe" n="480"/>
-                    <lb n="13" xml:id="AΟεNo"/><gap reason="lost" unit="character" quantity="3" xml:id="AΟεNy" n="485"/><w xml:id="AΟεNΙ" n="490"><unclear xml:id="AΟεNΤ">τ</unclear>οῖς</w> <w xml:id="AΟεNε" n="495">ἐκγόνοις</w> <w xml:id="AΟεNο" n="500">αὐτῶντα</w> <w xml:id="AΟεOA" n="505">ἐς</w> <w xml:id="AΟεOK" n="510">ὑπόμναμα</w> <w part="I" xml:id="AΟεOU" n="515">παραδ<unclear xml:id="AΟεOe">ε</unclear></w> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεOo" n="520"/>
-                    <lb n="14" xml:id="AΟεOy"/><gap reason="lost" unit="character" atLeast="6" atMost="7" xml:id="AΟεOΙ" n="525"/><w xml:id="AΟεOΤ" n="530"><supplied reason="lost" xml:id="AΟεOε">ὅ</supplied>πως</w> <w xml:id="AΟεOο" n="535">ἃ</w> <w xml:id="AΟεPA" n="540">οἱ</w> <w xml:id="AΟεPK" n="545">πρέσβεις</w> <w xml:id="AΟεPU" n="550">καλοὶ</w> <w xml:id="AΟεPe" n="555">καὶ</w> <w xml:id="AΟεPo" n="560">ἀγαθοὶ</w> <w xml:id="AΟεPy" n="565">ἄνδ<supplied reason="lost" xml:id="AΟεPΙ">ρες</supplied></w> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεPΤ" n="570"/>
-                    <lb n="15" xml:id="AΟεPε"/><gap reason="lost" unit="character" atLeast="8" atMost="9" xml:id="AΟεPο" n="575"/><w part="F" xml:id="AΟεQA" n="580"><unclear xml:id="AΟεQK">υγ</unclear>μένου</w> <w xml:id="AΟεQU" n="585">τὰ</w> <w xml:id="AΟεQe" n="590">ἀνενειώσαντο</w> <w part="I" xml:id="AΟεQo" n="595">τ</w> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεQy" n="600"/>
-                    <lb n="16" xml:id="AΟεQΙ"/><gap reason="lost" unit="character" atLeast="12" atMost="14" xml:id="AΟεQΤ" n="605"/><w xml:id="AΟεQε" n="610"><unclear xml:id="AΟεQο">παρα</unclear></w> <w xml:id="AΟεRA" n="615">λελαβήκειν</w> <w xml:id="AΟεRK" n="620">καὶ</w> <w xml:id="AΟεRU" n="625">τα<unclear xml:id="AΟεRe">ῦ</unclear><supplied reason="lost" xml:id="AΟεRo">τα</supplied></w> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεRy" n="630"/>
-                    <lb n="17" xml:id="AΟεRΙ"/><gap reason="lost" unit="character" quantity="16" precision="low" xml:id="AΟεRΤ" n="635"/><w xml:id="AΟεRε" n="640"><unclear xml:id="AΟεRο">ν</unclear></w> <w xml:id="AΟεSA" n="645">ἀποικίαν</w> <w xml:id="AΟεSK" n="650">τῶν</w> <placeName type="ethnic"><w xml:id="AΟεSU" n="655">Κε<supplied reason="lost" xml:id="AΟεSe">ντοριπίνων</supplied></w></placeName> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεSo" n="660"/>
-                    <lb n="18" xml:id="AΟεSy"/><gap reason="lost" unit="character" quantity="24" precision="low" xml:id="AΟεSΙ" n="665"/><w xml:id="AΟεSΤ" n="670">ς</w> <w xml:id="AΟεSε" n="675">ἐν</w> <w xml:id="AΟεSο" n="680">τῶι</w> <w xml:id="AΟεTA" n="685">το<unclear xml:id="AΟεTK">ῦ</unclear></w> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεTU" n="690"/>
-                    <lb n="19" xml:id="AΟεTe"/><gap reason="lost" extent="unknown" unit="character" xml:id="AΟεTo" n="695"/><gap reason="illegible" unit="character" quantity="1" cert="low" xml:id="AΟεTy" n="700"/><gap reason="lost" extent="unknown" unit="character" xml:id="AΟεTΙ" n="705"/>
+                    <lb n="1" xml:id="AΟεAK" /><w xml:id="AΟεAU" n="5"><supplied reason="lost" xml:id="AΟεAe">οἱ πρέσ</supplied><unclear xml:id="AΟεAo">β</unclear>εις</w> <w xml:id="AΟεAy" n="10">οἱ</w> <w xml:id="AΟεAΙ" n="15">πορευθέντες</w> <w xml:id="AΟεAΤ" n="20">ἐς</w> <placeName><w xml:id="AΟεAε" n="25">Ῥώμαν</w></placeName> <w xml:id="AΟεAο" n="30">κα<supplied reason="lost" xml:id="AΟεBA">ὶ</supplied></w> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεBK" n="35" />
+                    <lb n="2" xml:id="AΟεBU" /><w xml:id="AΟεBe" n="40"><supplied reason="lost" xml:id="AΟεBo">ἐπι</supplied>στελματα</w> <w xml:id="AΟεBy" n="45">εἶχον</w> <persName type="attested"><name ref="http://data.lgpn.io/person/V3a-28126"><w xml:id="AΟεBΙ" n="50">Φιλί<unclear xml:id="AΟεBΤ">α</unclear>ρχος</w></name> <persName type="attested"><name type="patronym"><w xml:id="AΟεBε" n="55">Φιλιάρχου,</w></name></persName></persName> <persName type="attested"><name><w part="I" xml:id="AΟεBο" n="60">Λαμπ</w></name></persName> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεCA" n="65" />
+                    <lb n="3" xml:id="AΟεCK" /><gap reason="lost" unit="character" atLeast="4" atMost="5" xml:id="AΟεCU" n="70" /><w xml:id="AΟεCe" n="75">αὐτούστα</w> <w xml:id="AΟεCo" n="80">ἐς</w> <placeName><w xml:id="AΟεCy" n="85">Λανόϊον</w></placeName> <w xml:id="AΟεCΙ" n="90">πεπορεῦσθαι</w> <w xml:id="AΟεCΤ" n="95">καὶ</w> <w xml:id="AΟεCε" n="100">ἀνανενειώσ<supplied reason="lost" xml:id="AΟεCο">ασθαι</supplied></w> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεDA" n="105" />
+                    <lb n="4" xml:id="AΟεDK" /><w xml:id="AΟεDU" n="110"><supplied reason="lost" xml:id="AΟεDe">τ</supplied>ῶν</w> <placeName type="ethnic"><w xml:id="AΟεDo" n="115">Λανοινῶν</w></placeName> <w xml:id="AΟεDy" n="120">ποτὶ</w> <w xml:id="AΟεDΙ" n="125">τὸν</w> <w xml:id="AΟεDΤ" n="130">δᾶμον</w> <w xml:id="AΟεDε" n="135">τῶν</w> <placeName type="ethnic"><w xml:id="AΟεDο" n="140">Κεντοριπίνων</w></placeName> <w xml:id="AΟεEA" n="145">συγγένει<supplied reason="lost" xml:id="AΟεEK">αν</supplied></w> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεEU" n="150" />
+                    <lb n="5" xml:id="AΟεEe" /><gap reason="lost" unit="character" quantity="1" xml:id="AΟεEo" n="155" /><w part="F" xml:id="AΟεEy" n="160">ἥκειν</w> <w xml:id="AΟεEΙ" n="165">αὐτούστα</w> <w xml:id="AΟεEΤ" n="170">δόγμα</w> <w xml:id="AΟεEε" n="175">παρὰ</w> <w xml:id="AΟεEο" n="180">τᾶς</w> <w xml:id="AΟεFA" n="185">συγκλήτου</w> <w xml:id="AΟεFK" n="190">τῶν</w> <placeName type="ethnic"><w xml:id="AΟεFU" n="195">Λανοινῶ<unclear xml:id="AΟεFe">ν</unclear></w></placeName> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεFo" n="200" />
+                    <lb n="6" xml:id="AΟεFy" /><persName type="attested"><name type="nomen"><w xml:id="AΟεFΙ" n="205">Φούριος</w></name> <persName type="attested"><name type="patronym"><w xml:id="AΟεFΤ" n="210">Ποπλίου</w></name></persName> <w xml:id="AΟεFε" n="215">υἱὸς</w></persName> <roleName type="civic" subtype="dictator" xml:id="AΟεFο"><w xml:id="AΟεGA" n="220">στραταγὸς</w> <w xml:id="AΟεGK" n="225">αὐτοκράτωρ</w></roleName> <w xml:id="AΟεGU" n="230">καὶ</w> <persName type="attested"><name type="praenomen"><w xml:id="AΟεGe" n="235">Γάϊος</w></name> <name type="nomen"><w xml:id="AΟεGo" n="240">Ἀτέλ<unclear xml:id="AΟεGy">λ</unclear><supplied reason="lost" xml:id="AΟεGΙ">ιος</supplied></w></name> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεGΤ" n="245"><desc xml:id="AΟεGε">patronym</desc></gap><w xml:id="AΟεGο" n="250"><supplied reason="lost" xml:id="AΟεHA">υἱός</supplied></w></persName> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεHK" n="255" />
+                    <lb n="7" xml:id="AΟεHU" /><persName type="attested"><persName type="attested"><name type="patronym"><w xml:id="AΟεHe" n="260">Γαΐου</w></name></persName> <w xml:id="AΟεHo" n="265">υἱὸς</w></persName> <roleName type="civic" subtype="agoranomos" xml:id="AΟεHy"><w xml:id="AΟεHΙ" n="270">ἀγορανόμοι</w></roleName> <w xml:id="AΟεHΤ" n="275">τᾶι</w> <w xml:id="AΟεHε" n="280">συγκλήτωι</w> <w xml:id="AΟεHο" n="285">συνεβουλεύσαντο</w> <w part="I" xml:id="AΟεIA" n="290">ἀ<unclear xml:id="AΟεIK">ν</unclear></w> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεIU" n="295" />
+                    <lb n="8" xml:id="AΟεIe" /><w xml:id="AΟεIo" n="300">καλανδᾶν</w> <w xml:id="AΟεIy" n="305">Δεκεμβρίων</w> <w xml:id="AΟεIΙ" n="310">γραφομένωι</w> <w xml:id="AΟεIΤ" n="315">παρεγένοντο</w> <persName type="attested"><name type="praenomen"><w xml:id="AΟεIε" n="320">Λεύ<supplied reason="lost" xml:id="AΟεIο">κιος</supplied></w></name> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεJA" n="325"><desc xml:id="AΟεJK">nomen, patronym</desc></gap><w xml:id="AΟεJU" n="330"><supplied reason="lost" xml:id="AΟεJe">υἱὸς</supplied></w></persName> <persName type="attested"><gap reason="lost" extent="unknown" unit="character" xml:id="AΟεJo" n="335"><desc xml:id="AΟεJy">praenomen</desc></gap>
+                    <lb n="9" xml:id="AΟεJΙ" /><name type="nomen"><w xml:id="AΟεJΤ" n="340">Μαάρκιος</w></name> <persName type="attested"><name type="patronym"><w xml:id="AΟεJε" n="345">Κοίντου</w></name></persName> <w xml:id="AΟεJο" n="350">υἱός</w></persName> <persName type="attested"><name type="praenomen"><w xml:id="AΟεKA" n="355">Λεύκιος</w></name> <name type="nomen"><w xml:id="AΟεKK" n="360">Κάπτιος</w></name> <persName type="attested"><name type="patronym"><w xml:id="AΟεKU" n="365">Μαάρκου</w></name></persName> <w xml:id="AΟεKe" n="370">υἱὸς</w></persName> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεKo" n="375" />
+                    <lb n="10" xml:id="AΟεKy" /><persName type="attested"><name><w xml:id="AΟεKΙ" n="380">Ξώαρχος</w></name> <persName type="attested"><name type="patronym"><w xml:id="AΟεKΤ" n="385">Μενίσκου</w></name></persName> <w xml:id="AΟεKε" n="390">υἱὸς</w></persName> <roleName type="civic" subtype="presbys" xml:id="AΟεKο"><w xml:id="AΟεLA" n="395">πρέσβεις</w></roleName> <placeName type="ethnic"><w xml:id="AΟεLK" n="400">Κεντοριπίνων</w></placeName> <w part="I" xml:id="AΟεLU" n="405">λ<unclear xml:id="AΟεLe">ω</unclear></w> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεLo" n="410" />
+                    <lb n="11" xml:id="AΟεLy" /><w xml:id="AΟεLΙ" n="415"><supplied reason="lost" xml:id="AΟεLΤ">το</supplied>ῦ</w> <w xml:id="AΟεLε" n="420">δάμου</w> <w xml:id="AΟεLο" n="425">καὶ</w> <w xml:id="AΟεMA" n="430">τᾶς</w> <w xml:id="AΟεMK" n="435">συγκλήτου</w> <w xml:id="AΟεMU" n="440">τῶν</w> <placeName type="ethnic"><w xml:id="AΟεMe" n="445">Κεντοριπίνων</w></placeName> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεMo" n="450" />
+                    <lb n="12" xml:id="AΟεMy" /><w xml:id="AΟεMΙ" n="455"><supplied reason="lost" xml:id="AΟεMΤ">προ</supplied>ξενίαν</w> <w xml:id="AΟεMε" n="460">καὶ</w> <w xml:id="AΟεMο" n="465">οἰκειοσύναν</w> <w xml:id="AΟεNA" n="470">ἀνανειωσούμενοι</w> <w xml:id="AΟεNK" n="475">κα<unclear xml:id="AΟεNU">ὶ</unclear></w> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεNe" n="480" />
+                    <lb n="13" xml:id="AΟεNo" /><gap reason="lost" unit="character" quantity="3" xml:id="AΟεNy" n="485" /><w xml:id="AΟεNΙ" n="490"><unclear xml:id="AΟεNΤ">τ</unclear>οῖς</w> <w xml:id="AΟεNε" n="495">ἐκγόνοις</w> <w xml:id="AΟεNο" n="500">αὐτῶντα</w> <w xml:id="AΟεOA" n="505">ἐς</w> <w xml:id="AΟεOK" n="510">ὑπόμναμα</w> <w part="I" xml:id="AΟεOU" n="515">παραδ<unclear xml:id="AΟεOe">ε</unclear></w> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεOo" n="520" />
+                    <lb n="14" xml:id="AΟεOy" /><gap reason="lost" unit="character" atLeast="6" atMost="7" xml:id="AΟεOΙ" n="525" /><w xml:id="AΟεOΤ" n="530"><supplied reason="lost" xml:id="AΟεOε">ὅ</supplied>πως</w> <w xml:id="AΟεOο" n="535">ἃ</w> <w xml:id="AΟεPA" n="540">οἱ</w> <w xml:id="AΟεPK" n="545">πρέσβεις</w> <w xml:id="AΟεPU" n="550">καλοὶ</w> <w xml:id="AΟεPe" n="555">καὶ</w> <w xml:id="AΟεPo" n="560">ἀγαθοὶ</w> <w xml:id="AΟεPy" n="565">ἄνδ<supplied reason="lost" xml:id="AΟεPΙ">ρες</supplied></w> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεPΤ" n="570" />
+                    <lb n="15" xml:id="AΟεPε" /><gap reason="lost" unit="character" atLeast="8" atMost="9" xml:id="AΟεPο" n="575" /><w part="F" xml:id="AΟεQA" n="580"><unclear xml:id="AΟεQK">υγ</unclear>μένου</w> <w xml:id="AΟεQU" n="585">τὰ</w> <w xml:id="AΟεQe" n="590">ἀνενειώσαντο</w> <w part="I" xml:id="AΟεQo" n="595">τ</w> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεQy" n="600" />
+                    <lb n="16" xml:id="AΟεQΙ" /><gap reason="lost" unit="character" atLeast="12" atMost="14" xml:id="AΟεQΤ" n="605" /><w xml:id="AΟεQε" n="610"><unclear xml:id="AΟεQο">παρα</unclear></w> <w xml:id="AΟεRA" n="615">λελαβήκειν</w> <w xml:id="AΟεRK" n="620">καὶ</w> <w xml:id="AΟεRU" n="625">τα<unclear xml:id="AΟεRe">ῦ</unclear><supplied reason="lost" xml:id="AΟεRo">τα</supplied></w> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεRy" n="630" />
+                    <lb n="17" xml:id="AΟεRΙ" /><gap reason="lost" unit="character" quantity="16" precision="low" xml:id="AΟεRΤ" n="635" /><w xml:id="AΟεRε" n="640"><unclear xml:id="AΟεRο">ν</unclear></w> <w xml:id="AΟεSA" n="645">ἀποικίαν</w> <w xml:id="AΟεSK" n="650">τῶν</w> <placeName type="ethnic"><w xml:id="AΟεSU" n="655">Κε<supplied reason="lost" xml:id="AΟεSe">ντοριπίνων</supplied></w></placeName> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεSo" n="660" />
+                    <lb n="18" xml:id="AΟεSy" /><gap reason="lost" unit="character" quantity="24" precision="low" xml:id="AΟεSΙ" n="665" /><w xml:id="AΟεSΤ" n="670">ς</w> <w xml:id="AΟεSε" n="675">ἐν</w> <w xml:id="AΟεSο" n="680">τῶι</w> <w xml:id="AΟεTA" n="685">το<unclear xml:id="AΟεTK">ῦ</unclear></w> <gap reason="lost" extent="unknown" unit="character" xml:id="AΟεTU" n="690" />
+                    <lb n="19" xml:id="AΟεTe" /><gap reason="lost" extent="unknown" unit="character" xml:id="AΟεTo" n="695" /><gap reason="illegible" unit="character" quantity="1" cert="low" xml:id="AΟεTy" n="700" /><gap reason="lost" extent="unknown" unit="character" xml:id="AΟεTΙ" n="705" />
                 </ab>
             </div>
-            <!-- Text of Canali de Rossi 2002 <div type="edition" xml:space="preserve" subtype="PHI" n="PHI337197"> 
-                <ab>
-                    <lb n="1"/>
-                    <supplied reason="lost">οἱ πρέσ</supplied>βεις οἱ πορευθέντες ἐς Ῥώμαν κα
-                    <supplied reason="lost">ὶ διαλεχθέντες τῆι συγκλήτωι περὶ</supplied>
-                    <lb n="2"/>
-                    <supplied reason="lost">ὧν ἐπι</supplied>στέλματα εἶχον, Φιλίαρχος Φιλιάρχου, Λαμπ
-                    <supplied reason="lost">— —, Ζώαρχος Μενίσκου (tribus)</supplied>
-                    <lb n="3"/>
-                    <supplied reason="lost">φασιν</supplied>
-                    αὐτούστα ἐς Λανόϊον πεπορεῦσθαι καὶ ἀνανενειῶσ
-                    <supplied reason="lost">θαι τὰν ὑπάρχουσαν τῶι δάμωι</supplied>
-                    <lb n="4"/>
-                    <supplied reason="lost">τ</supplied>ῶν Λανοινῶν ποτὶ τὸν δᾶμον τῶν Κεντοριπίνων συγγένει
-                    <supplied reason="lost">αν καὶ ξενίαν καὶ οἰκειοσύναν</supplied>
-                    <lb n="5"/>ἥκειν αὐτούστα δόγμα παρὰ τᾶς συγκλήτου τῶν Λανοινῶ
-                    <supplied reason="lost">ν κομίζοντας τόδε· vacat Πόπλιος</supplied>
-                    <lb n="6"/>Φούριος Ποπλίου υἱὸς στραταγὸς αὐτοκράτωρ καὶ Γάϊος Ἀτέλλ
-                    <supplied reason="lost">ιος (praenomen) υἱός, (praenomen nomen)</supplied>
-                    <lb n="7"/>Γαΐου υἱὸς ἀγορανόμοι τᾶι συγκλήτωι συνεβουλεύσαντο ἀν
-                    <supplied reason="lost">(locum), πρὸ ἡμερῶν ․․ʹ</supplied>
-                    <lb n="8"/>καλανδᾶν Δεκεμβρίων, γραφομένωι παρεγένοντο Λεύ
-                    <supplied reason="lost">κιος (nomen praenomen) υἱὸς (praenomen)</supplied>
-                    <lb n="9"/>Μαάρκιος Κοίντου υἱός, Λεύκιος Κάπτιος Μαάρκου υἱός· <supplied reason="lost">περὶ ὧν
-                    Φιλίαρχος Φιλιάρχου υἱός</supplied>,<lb n="10"/>Ζώαρχος Μενίσκου υἱός, πρέσβεις Κεντοριπίνων, λό
-                    <supplied reason="lost">γους ἐποιήσαντο ὅπως αὐτοῖς θυσίαν ὑπὲρ</supplied>
-                    <lb n="11"/>
-                    <supplied reason="lost">τ</supplied>οῦ δάμου καὶ τᾶς συγκλήτου τῶν Κεντοριπίνων
-                    <supplied reason="lost">ἐν τῶι ἱερῶι τοῦ Διὸς ποῆσαι ἐξῆι, συγγένειαν</supplied>
-                    <lb n="12"/>
-                    <supplied reason="lost">καὶ</supplied>
-                    ξενίαν καὶ οἰκειοσύναν ἀνανειωσούμενοι, κα
-                    <supplied reason="lost">ὶ λάβωσιν δόγμα παρὰ τοῦ ἁμετέρου δάμου</supplied>
-                    <lb n="13"/>
-                    <supplied reason="lost">ἵνα τ</supplied>οῖς ἐκγόνοις αὐτῶντα ἐς ὑπόμναμα παραδ
-                    <supplied reason="lost">εδόμενον ἦι· περὶ τούτων τῶν πραγμάτων οὕτως</supplied>
-                    <lb n="14"/>
-                    <supplied reason="lost">ἔδοξεν· ὅ</supplied>πως ἃ οἱ πρέσβεις καλοὶ καὶ ἀγαθοὶ ἄνδ<supplied reason="lost">ρες παρὰ δάμου καλοῦ καὶ ἀγαθοῦ ἡμῶν συγ</supplied>-
-                    <lb n="15"/>
-                    <supplied reason="lost">γενοῦς ἀνακαρ</supplied>υγμένου τὰ ἀνενειώσαντο, τα
-                    <supplied reason="lost">ῦτα κεκυρωμένα ὦσιν ἐπεὶ καὶ ἡμεῖς ὁμολογοῦμεν</supplied>
-                    <lb n="16"/>
-                    <supplied reason="lost">ἐκ προγόνων αὐτὰ πα</supplied>ραλελαβήκειν, καὶ τα
-                    <supplied reason="lost">ῦτα εἰς χαλκώματα δύω ἐγχαραχθῶσιν, ὧν τὸ μὲν</supplied>
-                    <lb n="17"/>
-                    <supplied reason="lost">ἓν αὐτοῖς κομίζειν εἰς τὴν</supplied>
-                    ἀποικίαν τῶν Κε
-                    <supplied reason="lost">ντοριπίνων ἐξῇ, τὸ δὲ ἕτερον φροντίσωσιν οἱ ταμίαι</supplied>
-                    <lb n="18"/>
-                    <supplied reason="lost">οἱ ἐν τᾶι ἁμετέραι πόλει ὅπω</supplied>ς ἐν τῶι το
-                    <supplied reason="lost">ῦ Διὸς ἱερῶι προσηλωμένον ἦ vacat</supplied>
-                    <lb n="19"/>
-                </ab> 
-            </div>-->
+            
             <div type="apparatus" resp="#JP">
                 <listApp>
                     <app>
@@ -371,69 +316,69 @@
                 <p>[after the edition of Cebeillac-Gervasoni] The ambassadors who went to Rome and to Lanuvium, according to the instructions which they had received, Philarchos, son of Philarchos, Lamp[---, son of  ---], and Xoarchos, son of Meniskos, report that they went to Lanuvium and that they have renewed links of hospitality and of kinship between the people of Centuripe and the people of Lanuvium, and that they bring a decree from the senate of the Lanuvians: Furius, son of Publius, the dictator, and Gaios Atellios son of [---] and [---] son of Gaios, the aediles, convened the senate [---] days before the Kalends of December. The decree was composed by Leukios son of [---], Markios son of Quintus, and Leukios Kaptios, son of Markos. Concerning those matters about which Philiarchos, son of Philiarchos, Lamp[-- son of ---] and Xoarchos, son of Meniskos, ambassadors of the Kentoripini [---?---] of the people and the senate of the Kentoripini [---?---], in order to renew the links of hospitality and of kinship and [---?---] for their descendants, as a memorial [---?---] just as the ambassadors, fine and noble men, have renewed [---?---] have received [---?---] the colony (apoikia) of the Kentoripini [---?---].</p>
             </div>
             <div type="commentary">
-                <p><!--commented out pending revision-->
-                    <!--Ambassadors to Lanuvium, who brought back a decree of the senate of Lanuvium.transl. in French in AE 1990; supports Verr. 2.2.161; 2.5.83. NB the town in Latium is Lanuvium, not Lavinium. SEG 42.837 reproduces text. Speaks of the damos and sugkletos of the Kentoripinoi, and also the apoikia of the Kentoripinoi (colonia, or simply kinship type links from the past?). Manganaro 2011 now argues palaeographically for a C2 rather than C1 BC date.--></p>
+                <p>
+                    </p>
             </div>
             <div type="bibliography">
                 <listBibl type="edition">
                     <bibl type="bulletin" n="AE">
                         <citedRange>1990.0437</citedRange>
-                        <ptr target="http://zotero.org/groups/382445/items/R46KDTZX"/>
+                        <ptr target="http://zotero.org/groups/382445/items/R46KDTZX" />
                         <ref target="https://biblio.inscriptiones.org/epig10001283">https://biblio.inscriptiones.org/epig10001283</ref>
                     </bibl>
                     <bibl type="bulletin" n="AE">
                         <citedRange>1989.0347</citedRange>
-                        <ptr target="http://zotero.org/groups/382445/items/R46KDTZX"/>
+                        <ptr target="http://zotero.org/groups/382445/items/R46KDTZX" />
                         <ref target="https://biblio.inscriptiones.org/epig10001283">https://biblio.inscriptiones.org/epig10001283</ref>
                     </bibl>
                     <bibl type="bulletin" n="AE">
                         <citedRange>1966.0165</citedRange>
-                        <ptr target="http://zotero.org/groups/382445/items/R46KDTZX"/>
+                        <ptr target="http://zotero.org/groups/382445/items/R46KDTZX" />
                         <ref target="https://biblio.inscriptiones.org/epig10001283">https://biblio.inscriptiones.org/epig10001283</ref>
                     </bibl>
                     <bibl type="bulletin" n="SEG">
                         <citedRange>61.0740</citedRange>
-                        <ptr target="http://zotero.org/groups/382445/items/F2GG87EQ"/>
+                        <ptr target="http://zotero.org/groups/382445/items/F2GG87EQ" />
                         <ref target="https://biblio.inscriptiones.org/epig10000796">https://biblio.inscriptiones.org/epig10000796</ref>
                     </bibl>
                     <bibl type="bulletin" n="SEG">
                         <citedRange>57.0868</citedRange>
-                        <ptr target="http://zotero.org/groups/382445/items/F2GG87EQ"/>
+                        <ptr target="http://zotero.org/groups/382445/items/F2GG87EQ" />
                         <ref target="https://biblio.inscriptiones.org/epig10000796">https://biblio.inscriptiones.org/epig10000796</ref>
                     </bibl>
                     <bibl type="bulletin" n="SEG">
                         <citedRange>56.1083</citedRange>
-                        <ptr target="http://zotero.org/groups/382445/items/F2GG87EQ"/>
+                        <ptr target="http://zotero.org/groups/382445/items/F2GG87EQ" />
                         <ref target="https://biblio.inscriptiones.org/epig10000796">https://biblio.inscriptiones.org/epig10000796</ref>
                     </bibl>
                     <bibl type="bulletin" n="SEG">
                         <citedRange>52.0888</citedRange>
-                        <ptr target="http://zotero.org/groups/382445/items/F2GG87EQ"/>
+                        <ptr target="http://zotero.org/groups/382445/items/F2GG87EQ" />
                         <ref target="https://biblio.inscriptiones.org/epig10000796">https://biblio.inscriptiones.org/epig10000796</ref>
                     </bibl>
                     <bibl type="bulletin" n="SEG">
                         <citedRange>47.1417</citedRange>
-                        <ptr target="http://zotero.org/groups/382445/items/F2GG87EQ"/>
+                        <ptr target="http://zotero.org/groups/382445/items/F2GG87EQ" />
                         <ref target="https://biblio.inscriptiones.org/epig10000796">https://biblio.inscriptiones.org/epig10000796</ref>
                     </bibl>
                     <bibl type="bulletin" n="SEG">
                         <citedRange>43.1271</citedRange>
-                        <ptr target="http://zotero.org/groups/382445/items/F2GG87EQ"/>
+                        <ptr target="http://zotero.org/groups/382445/items/F2GG87EQ" />
                         <ref target="https://biblio.inscriptiones.org/epig10000796">https://biblio.inscriptiones.org/epig10000796</ref>
                     </bibl>
                     <bibl type="bulletin" n="SEG">
                         <citedRange>42.0837</citedRange>
-                        <ptr target="http://zotero.org/groups/382445/items/F2GG87EQ"/>
+                        <ptr target="http://zotero.org/groups/382445/items/F2GG87EQ" />
                         <ref target="https://biblio.inscriptiones.org/epig10000796">https://biblio.inscriptiones.org/epig10000796</ref>
                     </bibl>
                     <bibl type="bulletin" n="BE">
                         <citedRange>1976.0820</citedRange>
-                        <ptr target="http://zotero.org/groups/382445/items/77P5MNIR"/>
+                        <ptr target="http://zotero.org/groups/382445/items/77P5MNIR" />
                         <ref target="https://biblio.inscriptiones.org/epig10001282">https://biblio.inscriptiones.org/epig10001282</ref>
                     </bibl>
                     <bibl type="bulletin" n="BE">
                         <citedRange>1965.0499</citedRange>
-                        <ptr target="http://zotero.org/groups/382445/items/77P5MNIR"/>
+                        <ptr target="http://zotero.org/groups/382445/items/77P5MNIR" />
                         <ref target="https://biblio.inscriptiones.org/epig10001282">https://biblio.inscriptiones.org/epig10001282</ref>
                     </bibl>
                     <bibl type="corpus" n="IGDS1">
@@ -442,7 +387,7 @@
                         <citedRange>
                             <ref target="http://www.persee.fr/doc/efr_0000-0000_1989_cat_119_1">189</ref>
                         </citedRange>
-                        <ptr target="https://www.zotero.org/groups/382445/items/RWXNUFEX"/>
+                        <ptr target="https://www.zotero.org/groups/382445/items/RWXNUFEX" />
                         <ref target="https://biblio.inscriptiones.org/epig10000187">https://biblio.inscriptiones.org/epig10000187</ref>
                     </bibl>
                     <bibl>
@@ -454,87 +399,87 @@
                         <author>Manganaro</author>
                         <date>1980</date>
                         <citedRange>425</citedRange>
-                        <ptr target="https://www.zotero.org/groups/382445/items/VQBJ735Q"/>
+                        <ptr target="https://www.zotero.org/groups/382445/items/VQBJ735Q" />
                         <ref target="https://biblio.inscriptiones.org/epig10001836">https://biblio.inscriptiones.org/epig10001836</ref>
                     </bibl>
                     <bibl>
                         <author>Manganaro</author>
                         <date>1963</date>
-                        <ptr target="https://www.zotero.org/groups/382445/items/W9MPVKRC"/>
+                        <ptr target="https://www.zotero.org/groups/382445/items/W9MPVKRC" />
                         <ref target="https://biblio.inscriptiones.org/epig10001846">https://biblio.inscriptiones.org/epig10001846</ref>
                     </bibl>
                     <bibl>
                         <author>Manganaro</author>
                         <date>1974</date>
                         <citedRange>396</citedRange>
-                        <ptr target="https://www.zotero.org/groups/382445/items/5MQNCNX5"/>
+                        <ptr target="https://www.zotero.org/groups/382445/items/5MQNCNX5" />
                         <ref target="https://biblio.inscriptiones.org/epig10001446">https://biblio.inscriptiones.org/epig10001446</ref>
                     </bibl>
                     <bibl>
                         <author>Manganaro</author>
                         <date>1976</date>
                         <citedRange>87-88, tav. IX</citedRange>
-                        <ptr target="https://www.zotero.org/groups/382445/items/PCDC2THA"/>
+                        <ptr target="https://www.zotero.org/groups/382445/items/PCDC2THA" />
                         <ref target="https://biblio.inscriptiones.org/epig10001360">https://biblio.inscriptiones.org/epig10001360</ref>
                     </bibl>
                     <bibl>
                         <author>Sherk</author>
                         <date>1970</date>
                         <citedRange>52 no.59</citedRange>
-                        <ptr target="https://www.zotero.org/groups/382445/items/I4AUEJRZ"/>
+                        <ptr target="https://www.zotero.org/groups/382445/items/I4AUEJRZ" />
                         <ref target="https://biblio.inscriptiones.org/epig10003148">https://biblio.inscriptiones.org/epig10003148</ref>
                     </bibl>
                     <bibl>
                         <author>Patané</author>
                         <date>2002</date>
                         <citedRange>135-137</citedRange>
-                        <ptr target="https://www.zotero.org/groups/382445/items/JMEZ3U2H"/>
+                        <ptr target="https://www.zotero.org/groups/382445/items/JMEZ3U2H" />
                         <ref target="https://biblio.inscriptiones.org/epig10003140">https://biblio.inscriptiones.org/epig10003140</ref>
                     </bibl>
                     <bibl>
                         <author>Cébeillac Gervasoni</author>
                         <date>1989</date>
-                        <ptr target="https://www.zotero.org/groups/382445/items/ZQPIDFC7"/>
+                        <ptr target="https://www.zotero.org/groups/382445/items/ZQPIDFC7" />
                         <ref target="https://biblio.inscriptiones.org/epig10002080">https://biblio.inscriptiones.org/epig10002080</ref>
                     </bibl>
                     <bibl>
                         <author>Manganaro</author>
                         <date>2006</date>
                         <citedRange>184-193</citedRange>
-                        <ptr target="https://www.zotero.org/groups/382445/items/6WRIJI6Q"/>
+                        <ptr target="https://www.zotero.org/groups/382445/items/6WRIJI6Q" />
                         <ref target="https://biblio.inscriptiones.org/epig10001797">https://biblio.inscriptiones.org/epig10001797</ref>
                     </bibl>
                     <bibl>
                         <author>Manganaro</author>
                         <date>2011</date>
                         <citedRange>549-552</citedRange>
-                        <ptr target="https://www.zotero.org/groups/382445/items/I2KXGCFU"/>
+                        <ptr target="https://www.zotero.org/groups/382445/items/I2KXGCFU" />
                         <ref target="https://biblio.inscriptiones.org/epig10001791">https://biblio.inscriptiones.org/epig10001791</ref>
                     </bibl>
                     <bibl>
                         <author>Battistoni</author>
                         <date>2010</date>
                         <citedRange>147-165</citedRange>
-                        <ptr target="https://www.zotero.org/groups/382445/items/EM69URIQ"/>
+                        <ptr target="https://www.zotero.org/groups/382445/items/EM69URIQ" />
                         <ref target="https://biblio.inscriptiones.org/epig10002165">https://biblio.inscriptiones.org/epig10002165</ref>
                     </bibl>
                     <bibl>
                         <author>Canali de Rossi</author>
                         <date>2002</date>
                         <citedRange>no.163</citedRange>
-                        <ptr target="https://www.zotero.org/groups/382445/items/9CISDA62"/>
+                        <ptr target="https://www.zotero.org/groups/382445/items/9CISDA62" />
                         <ref target="https://biblio.inscriptiones.org/epig10000283">https://biblio.inscriptiones.org/epig10000283</ref>
                     </bibl>
                     <bibl>
                         <author>Canali de Rossi</author>
                         <date>2007</date>
                         <citedRange>236-239</citedRange>
-                        <ptr target="https://www.zotero.org/groups/382445/items/UV9TFG37"/>
+                        <ptr target="https://www.zotero.org/groups/382445/items/UV9TFG37" />
                         <ref target="https://biblio.inscriptiones.org/epig10002093">https://biblio.inscriptiones.org/epig10002093</ref>
                     </bibl>
                 </listBibl>
                 <listBibl type="discussion">
-                    <bibl/>
+                    <bibl />
                 </listBibl>
             </div>
         </body>

@@ -1,6 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../schematron/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml version='1.0' encoding='utf-8'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en">
     <teiHeader>
         <fileDesc>
@@ -211,7 +209,7 @@
                 </div>
                 <div type="textpart" subtype="section" n="b" xml:lang="grc">
                  <ab>
-                        <lb n="3"/><persName type="attested"><name><expan><abbr><supplied reason="undefined" evidence="previouseditor">Μ</supplied></abbr><ex>αρκία</ex></expan></name> <name><supplied reason="undefined" evidence="previouseditor">Μάρυλλ</supplied><unclear>α</unclear></name></persName> <w>ἔ<unclear>ζ</unclear><supplied reason="lost">ησεν</supplied></w>
+                        <lb n="3"/><persName type="attested"><name><expan><abbr><supplied reason="undefined" evidence="previouseditor">Μ</supplied></abbr><ex>αρκία</ex></expan></name> <name ref="http://data.lgpn.io/person/V3a-39916"><supplied reason="undefined" evidence="previouseditor">Μάρυλλ</supplied><unclear>α</unclear></name></persName> <w>ἔ<unclear>ζ</unclear><supplied reason="lost">ησεν</supplied></w>
                     <lb n="4"/><w><supplied reason="undefined" evidence="previouseditor">ἔτη</supplied></w> <supplied reason="undefined" evidence="previouseditor"><num atLeast="50" atMost="59">ν<gap reason="lost" extent="unknown" unit="character"/></num></supplied>
                 </ab>
                 </div>
